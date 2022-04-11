@@ -98,7 +98,7 @@
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding"></stringProp>
-          <stringProp name="filename">C:/Git/Jmeter/DealerPortalReleaseLoadTest/TestData_UAT_View_Save_Submit.csv</stringProp>
+          <stringProp name="filename">/TestData_${environment}_View_Save_Submit.csv</stringProp>
           <boolProp name="quotedData">true</boolProp>
           <boolProp name="recycle">true</boolProp>
           <stringProp name="shareMode">shareMode.all</stringProp>
@@ -189,7 +189,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Git\Jmeter\DealerPortalReleaseLoadTest\RunLogs\Save_Application_25_Users_Once_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
+          <stringProp name="filename">C:\JMeterTestLogs\Save_Application_25_Users_Once_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -301,7 +301,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Git\Jmeter\DealerPortalReleaseLoadTest\RunLogs\Save_Application_25_Users_5_Min_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
+          <stringProp name="filename">C:\JMeterTestLogs\Save_Application_25_Users_5_Min_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -413,7 +413,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Git\Jmeter\DealerPortalReleaseLoadTest\RunLogs\Submit_Application_25_Users_Once_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
+          <stringProp name="filename">C:\JMeterTestLogs\Submit_Application_25_Users_Once_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -525,7 +525,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Git\Jmeter\DealerPortalReleaseLoadTest\RunLogs\Submit_Application_25_Users_5_Min_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
+          <stringProp name="filename">C:\JMeterTestLogs\Submit_Application_25_Users_5_Min_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -629,7 +629,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Git\Jmeter\DealerPortalReleaseLoadTest\RunLogs\View_Application_25_Users_Once_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
+          <stringProp name="filename">C:\JMeterTestLogs\View_Application_25_Users_Once_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -733,7 +733,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Git\Jmeter\DealerPortalReleaseLoadTest\RunLogs\View_Application_25_Users_5_Min_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
+          <stringProp name="filename">C:\JMeterTestLogs\View_Application_25_Users_5_Min_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -853,7 +853,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Git\Jmeter\DealerPortalReleaseLoadTest\RunLogs\Finalize_Digital_Deal_25_Users_Once_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
+          <stringProp name="filename">C:\JMeterTestLogs\Finalize_Digital_Deal_25_Users_Once_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -973,7 +973,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Git\Jmeter\DealerPortalReleaseLoadTest\RunLogs\Finalize_Digital_Deal_25_Users_5_Min_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
+          <stringProp name="filename">C:\JMeterTestLogs\Finalize_Digital_Deal_25_Users_5_Min_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -10419,7 +10419,7 @@ cm.add(c)</stringProp>
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="false">
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
