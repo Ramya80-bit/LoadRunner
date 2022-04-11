@@ -1,0 +1,13 @@
+Primary Admins 
+usera-312398@mailinator.com/Password1
+user000-312494@mailinator.com/Password1
+
+Clients 
+312494-
+312499
+
+
+Dev Client:
+311964 
+
+user000-311964@mailinator.com

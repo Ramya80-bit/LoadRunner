@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="21025" it="0" lt="0" ct="21023" ts="1632190341077" s="false" lb="https://qa-dealer.cudl.com" rc="Non HTTP response code: javax.net.ssl.SSLHandshakeException" rm="Non HTTP response message: Remote host terminated the handshake" tn="Thread Group 1-15" dt="text" de="" by="2886" sby="0" sc="1" ec="1" ng="100" na="100" hn="QA-FSGHQV2-L">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept-Language: en-US,en;q=0.5
+Upgrade-Insecure-Requests: 1
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Host: qa-dealer.cudl.com
+</requestHeader>
+  <responseData class="java.lang.String">javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake&#xd;
+	at sun.security.ssl.SSLSocketImpl.handleEOF(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.decode(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)&#xd;
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)&#xd;
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.hc.LazyLayeredConnectionSocketFactory.connectSocket(LazyLayeredConnectionSocketFactory.java:92)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$JMeterDefaultHttpClientConnectionOperator.connect(HTTPHC4Impl.java:326)&#xd;
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)&#xd;
+	at java.lang.Thread.run(Unknown Source)&#xd;
+Caused by: java.io.EOFException: SSL peer shut down incorrectly&#xd;
+	at sun.security.ssl.SSLSocketInputRecord.read(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketInputRecord.readHeader(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketInputRecord.decode(Unknown Source)&#xd;
+	at sun.security.ssl.SSLTransport.decode(Unknown Source)&#xd;
+	... 27 more&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://qa-dealer.cudl.com/</java.net.URL>
+</httpSample>
+<httpSample t="17045" it="0" lt="17045" ct="399" ts="1632190394697" s="false" lb="/cuid/api/token" rc="400" rm="Bad Request" tn="Thread Group 1-46" dt="text" de="" by="707" sby="637" sc="1" ec="1" ng="100" na="100" hn="QA-FSGHQV2-L">
+  <responseHeader class="java.lang.String">HTTP/1.1 400 Bad Request
+Date: Tue, 21 Sep 2021 02:13:31 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Cache-Control: no-cache
+Expires: -1
+Pragma: no-cache
+X-Content-Type-Options: nosniff
+X-Frame-Options: Deny
+Access-Control-Allow-Origin: https://qa-dealer.cudl.com
+Access-Control-Allow-Headers: origin, x-requested-with, accept, x-api-key, x-api-version, clientid, tenantid, Content-Type, Authorization, LenderCode, businessUnitID, correlationid, scopes, clientsecrets
+Access-Control-Max-Age: 3628800
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Referer: https://qa-dealer.cudl.com/
+clientId: cudirect.digitalretail.qa
+Accept-Language: en-US,en;q=0.5
+Origin: https://qa-dealer.cudl.com
+Accept: */*
+x-api-key: mDpMlPzv7Wv9JRAO5GzQVTUFsq8R3vj3
+tenantId: 7cc8327a-58b5-4d50-8268-d28f65baf65c
+x-api-version: v3
+Content-Type: application/json
+scopes: cpapi asapi
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Content-Length: 80
+Host: plab1-api.cudirect.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:&quot;CUDirect.CUID.Services&quot;,&quot;message&quot;:&quot;The identity provider cannot be reached.&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;email&quot;:&quot;user003-312494@mailinator.com&quot;,&quot;password&quot;:&quot;Password1&quot;,&quot;deviceId&quot;:null}</queryString>
+  <java.net.URL>https://plab1-api.cudirect.com/cuid/api/token</java.net.URL>
+</httpSample>
+<httpSample t="566367" it="0" lt="0" ct="151" ts="1632189869310" s="false" lb="/CUDL/{SiteVersion}/App/Common/Views/SiteFooter.html" rc="Non HTTP response code: org.apache.http.NoHttpResponseException" rm="Non HTTP response message: qa-dealer.cudl.com:443 failed to respond" tn="Thread Group 1-31" dt="text" de="" by="2088" sby="0" sc="1" ec="1" ng="100" na="100" hn="QA-FSGHQV2-L">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyRW1haWxBZGRyZXNzIjoidXNlcjAxOC0zMTI0OTRAbWFpbGluYXRvci5jb20iLCJVc2VyRnVsbE5hbWUiOiJ0ZXN0IHRlc3QiLCJVc2VyR3VpZCI6IjUyNDI1NzRlLWYxZGQtNDZiNy1hZTc4LWIyY2JjNWEwZjRlYiIsIkNsaWVudENvZGUiOiIzMTI0OTQiLCJDbGllbnROYW1lIjoiRGVhbGVyIFBvcnRhbCBMb2FkIFRlc3QgQSIsIlJvbGUiOlsiRGVhbGVyUG9ydGFsLk9yZ2FuaXphdGlvbkFkbWluaXN0cmF0b3IiLCJEZWFsZXJQb3J0YWwuQ3JlZGl0VXNlciJdLCJpc3MiOiJDVURDLkF1dGhvcml6YXRpb24uRFAiLCJhdWQiOiJDVURDLlNlcnZpY2UuRFAiLCJleHAiOjE2MzIyNzYyNjYsIm5iZiI6MTYzMjE4OTg2Nn0.IXh2edwX7Ix1hYGTQP90N2qEqVxLQsZrUWquH4DbxI4
+Referer: https://qa-dealer.cudl.com/CUDL
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Accept: application/json, text/plain, */*
+Host: qa-dealer.cudl.com
+</requestHeader>
+  <responseData class="java.lang.String">org.apache.http.NoHttpResponseException: qa-dealer.cudl.com:443 failed to respond&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)&#xd;
+	at java.lang.Thread.run(Unknown Source)&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String">ASP.NET_SessionId=wuabapvjkirhjqalukudqeso; CUDIRECT=rd1o00000000000000000000ffff0a840a0ao8081; EAAuth=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InZ6UkxveXBYRS00WHM4bmMtY2t3S2dQQmxfWSIsInR5cCI6IkpXVCIsIng1dCI6InZ6UkxveXBYRS00WHM4bmMtY2t3S2dQQmxfWSJ9.eyJuYmYiOjE2MzIxODk4NjAsImV4cCI6MTYzMjE5MzQ2MCwiaXNzIjoiaHR0cHM6Ly9wbGFiMS1hcGkuY3VkaXJlY3QuY29tL2N1aWQiLCJhdWQiOlsiaHR0cHM6Ly9wbGFiMS1hcGkuY3VkaXJlY3QuY29tL2N1aWQvcmVzb3VyY2VzIiwiY3BhcGkiLCJhc2FwaSJdLCJjbGllbnRfaWQiOiJjdWRpcmVjdC5kaWdpdGFscmV0YWlsLnFhIiwic3ViIjoidXNlcjAxOC0zMTI0OTRAbWFpbGluYXRvci5jb20iLCJhdXRoX3RpbWUiOjE2MzIxODk4NjAsImlkcCI6ImxvY2FsIiwiZW1haWwiOiJ1c2VyMDE4LTMxMjQ5NEBtYWlsaW5hdG9yLmNvbSIsImVtYWlscyI6InVzZXIwMTgtMzEyNDk0QG1haWxpbmF0b3IuY29tIiwidGlkIjoiN2NjODMyN2EtNThiNS00ZDUwLTgyNjgtZDI4ZjY1YmFmNjVjIiwic2NvcGUiOlsiY3BhcGkiLCJhc2FwaSJdLCJhbXIiOlsiTG9jYWwiXX0.HvZU2JlvWjv_tbgsbd5CdrnGiOMAuUdolyEJERZSPk22wSAItKkyWoz52tIGhTOPqborUZlADf5yVHSTFMJ8Zl_n45pOq1bVQlX94YDRJ5qsXigfbkUkpKXxiAg2AJHpeHCJUARrTEw4mHDh0dRtzTMCk4I8OGl-XxQAIfVEU8pkC2C4lVRsMjMvFi_L5hSLnTPJZCzmB1aKC8bmXt_6wKoWdSQ5DnPkmXrxVl3QD-rWtbmlHhzUzUlhRPtiqbRAqFMLgP1UDtTRI4y1kq777qXMMbS0xSLbQ4khJdmVEw6kuoF1D8LcLVejbEOnba8CBQqqp7VN9sDZ8R86TNfK7g; SSOAuth=dXNlcjAxOC0zMTI0OTRAbWFpbGluYXRvci5jb206MHg4Mzk2NDJhNTlmZDYxMjA0NDE1ZmIwZGUyNjcwODdhZGQxZjkzMzViZjcxOGQ0YTI1YThmNWZiNGMzN2EyMTNmMGYyN2I2NTJkYThjMWFiN2ZjN2QyNzRkNDQwMDdhYTRkNGRlMjBhM2FmNGNlMDE5ZTk2MzZlZmI5MWI3YmEyNzRhZGU2MzBlMmNhNTg2ZjllYTk5ZTQzMDQ1YjIzZDRmYjEwNTkzMmYxZTg5OTlmZTllOTlkYjgxMDc2NDE2ZjFkYTUwNjIyM2RlZjBhMzU5MjFmZTZlZTYzZjNiMTUzMDBiZGQ5NTlmM2EyNzM2MTQ2OWNlMTUxNTg5ZjRjZjc5OTAwMGU4ZmU3MDExNzk4M2YwNTJmZDBhOGFjZWQxZDVjYWI5MzE2NTYzMDRmNzgwZDBmNmQ2YTRlOWYwMzM2NzNjMzU1NDAzODNmZTYxNTRlNDU2NTY3ODg4MjEwN2RkMjIwMWRiMDAxOGEyNDljZDEzNjY0YTg5N2QwNjk1ZTczYmViMWQ0ZGM2ODRhZDk3YzAwZWYwOTNmN2RmOGVmNTQ2NWIxMjQ0Yjk0NjZiZGExYTk3NGFlNWU0MDlmMjAwZjVhNjI1ZDYxZDFkYzQzZTc1OTNkN2M0OTJiMmFkNjQ0Yzk0ZDdiNGI3OTJhNGU0ZWZmYzMxNjk2MGMzYjM=; .ASPXFORMSAUTH=815BE8FEE2B6E25DEB1E0B05E6876E7F46CB538281258D4586A3C16DE03262EBEBD1AB0A805C0DD2AD907A7177F4181255C022D0AB9895CAABF15B313F42BD705127F91FC91FFD9F9131D8DFC9D5B6C996DEE13B09488E9A4B5D00EF4133138037AB61354924A7F97714DF698C1CCF332FF7FF3B435D5C258050E0C9D8172C3486A61B2C; AuthenticationToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxMGZlYWY1Ni00ZmRkLTQ1ZjAtYjI5Ny1kNDY2ZGYyN2Y1NTUiLCJpYXQiOjE2MzIxODk4NjIsInVzZXJFbWFpbEFkZHJlc3MiOiJ1c2VyMDE4LTMxMjQ5NEBtYWlsaW5hdG9yLmNvbSIsIm5iZiI6MTYzMjE4OTg2MSwiZXhwIjoxNjMyMjc2MjYxLCJpc3MiOiJDVURDLkF1dGhlbnRpY2F0aW9uIiwiYXVkIjoiQ1VEQy5TZXJ2aWNlcyJ9.Vc_noX-SUlueoKGVDCaA4i_4FjWrly15ML6dCbs9uwE; CudlDealerPortal=ssoGuid=5242574e-f1dd-46b7-ae78-b2cbc5a0f4eb&amp;login=user018-312494@mailinator.com&amp;clientKey=40a60fff-6506-4b80-9e01-65c162dc1ea1&amp;clientCode=312494; SelectedDealerCode=312494</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://qa-dealer.cudl.com/CUDL/v-27138/App/Common/Views/SiteFooter.html</java.net.URL>
+</httpSample>
+<httpSample t="566232" it="0" lt="0" ct="127" ts="1632189869622" s="false" lb="/CUDL/{SiteVersion}/App/Common/Views/SiteFooter.html" rc="Non HTTP response code: org.apache.http.NoHttpResponseException" rm="Non HTTP response message: qa-dealer.cudl.com:443 failed to respond" tn="Thread Group 1-39" dt="text" de="" by="2088" sby="0" sc="1" ec="1" ng="100" na="100" hn="QA-FSGHQV2-L">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyRW1haWxBZGRyZXNzIjoidXNlcjA4Ni0zMTI0OTRAbWFpbGluYXRvci5jb20iLCJVc2VyRnVsbE5hbWUiOiJ0ZXN0IHRlc3QiLCJVc2VyR3VpZCI6ImY5ZWJjNzU5LTlkNmQtNDU0ZC1iNGUwLTJiMGUwNTc2OTUwZCIsIkNsaWVudENvZGUiOiIzMTI0OTQiLCJDbGllbnROYW1lIjoiRGVhbGVyIFBvcnRhbCBMb2FkIFRlc3QgQSIsIlJvbGUiOlsiRGVhbGVyUG9ydGFsLlVzZXJBZG1pbmlzdHJhdG9yIiwiRGVhbGVyUG9ydGFsLkxlbmRpbmdVc2VyIl0sImlzcyI6IkNVREMuQXV0aG9yaXphdGlvbi5EUCIsImF1ZCI6IkNVREMuU2VydmljZS5EUCIsImV4cCI6MTYzMjI3NjI2NywibmJmIjoxNjMyMTg5ODY3fQ.83iFvrRXlebHAKMWqLUdfgnqjLgeab3xMOlWapc6gzY
+Referer: https://qa-dealer.cudl.com/CUDL
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Accept: application/json, text/plain, */*
+Host: qa-dealer.cudl.com
+</requestHeader>
+  <responseData class="java.lang.String">org.apache.http.NoHttpResponseException: qa-dealer.cudl.com:443 failed to respond&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)&#xd;
+	at java.lang.Thread.run(Unknown Source)&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String">ASP.NET_SessionId=qp5clzonej5dybuwzuqwutpv; CUDIRECT=rd1o00000000000000000000ffff0a840a0ao8081; EAAuth=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InZ6UkxveXBYRS00WHM4bmMtY2t3S2dQQmxfWSIsInR5cCI6IkpXVCIsIng1dCI6InZ6UkxveXBYRS00WHM4bmMtY2t3S2dQQmxfWSJ9.eyJuYmYiOjE2MzIxODk4NjAsImV4cCI6MTYzMjE5MzQ2MCwiaXNzIjoiaHR0cHM6Ly9wbGFiMS1hcGkuY3VkaXJlY3QuY29tL2N1aWQiLCJhdWQiOlsiaHR0cHM6Ly9wbGFiMS1hcGkuY3VkaXJlY3QuY29tL2N1aWQvcmVzb3VyY2VzIiwiY3BhcGkiLCJhc2FwaSJdLCJjbGllbnRfaWQiOiJjdWRpcmVjdC5kaWdpdGFscmV0YWlsLnFhIiwic3ViIjoidXNlcjA4Ni0zMTI0OTRAbWFpbGluYXRvci5jb20iLCJhdXRoX3RpbWUiOjE2MzIxODk4NjAsImlkcCI6ImxvY2FsIiwiZW1haWwiOiJ1c2VyMDg2LTMxMjQ5NEBtYWlsaW5hdG9yLmNvbSIsImVtYWlscyI6InVzZXIwODYtMzEyNDk0QG1haWxpbmF0b3IuY29tIiwidGlkIjoiN2NjODMyN2EtNThiNS00ZDUwLTgyNjgtZDI4ZjY1YmFmNjVjIiwic2NvcGUiOlsiY3BhcGkiLCJhc2FwaSJdLCJhbXIiOlsiTG9jYWwiXX0.tbs-cI4qY3j7P6bwD0dXbNAO2JWr6bEGw-zE7cjAO-nV_EBaK5vVr91ectnEA2YTa-QUvdLLHAS53Ngx2mTZr8Jlqzbn50NMZ5Bg5p1KM8XuD1Zp2d2uAp3z44KtDxfna3e89GdFgn31oAz0Fl3xeKcNp7SIwPuajOuzXe62-VpvoZj1NLUo9U_ibc0pzMTGu-E16_tUceM8zHsGghmEL97JQKUjcyDTUWxlpV3h_tqX18--lpqkv9IUqgv44pH1fRrai0BshkuxKCZhsNF8ZMa1yGnnXFbSoPWHKtIxZN_EyMnwlfpuKRwdzb6tZ23Nua6YBkvMdoTk2icIeXPV7A; SSOAuth=dXNlcjA4Ni0zMTI0OTRAbWFpbGluYXRvci5jb206MHg4Mzk2NDJhNTlmZDYxMjA0NDE1ZmIwZGUyNjcwODdhZGQxZjkzMzViZjcxOGQ0YTI1YThmNWZiNGMzN2EyMTNmMGYyN2I2NTJkYThjMWFiN2ZjN2QyNzRkNDQwMDdhYTRkNGRlMjBhM2FmNGNlMDE5ZTk2MzZlZmI5MWI3YmEyNzRhZGU2MzBlMmNhNTg2ZjllYTk5ZTQzMDQ1YjIzZDRmYjEwNTkzMmYxZTg5OTlmZTllOTlkYjgxMDc2NDE2ZjFkYTUwNjIyM2RlZjBhMzU5MjFmZTZlZTYzZjNiMTUzMDBiZGQ5NTlmM2EyNzM2MTQ2OWNlMTUxNTg5ZjRjZjc5OTAwMGU4ZmU3MDExNzk4M2YwNTJmZDBhOGFjZWQxZDVjYWI5MzE2NTYzMDRmNzgwZDBmNmQ2YTRlOWYwMzM2NzNjMzU1NDAzODNmZTYxNTRlNDU2NTY3ODg4MjEwN2RkMjIwMWRiMDAxOGEyNDljZDEzNjY0YTg5N2QwNjk1ZTczYmViMWQ0ZGM2ODRhZDk3YzAwZWYwOTNmN2RmOGVmNTQ2NWIxMjQ0Yjk0NjZiZGExYTk3NGFlNWU0MDlmMjAwZjVhNjI1ZDYxZDFkYzQzZTc1OTNkN2M0OTJiMmFkNjQ0Yzk0ZDdiNGI3OTJhNGU0ZWZmYzMxNjk2MGMzYjM=; .ASPXFORMSAUTH=E1874121B7F33DAED10EB2C0A0CF3102D1AF54909D846C9A2145BB6CF963006C19FAC5D53F1101E41FC8FBEDD68BC550E32DFAAE903532E7F26F2E31A9B56382AFF633B9DD4ECADCDDCB2E1115C64DCC78334F8501B901F9EFF91A0BB82338ACF27B1C086B676891C7DB476ECFF3749C8112067C36E287596EAC4E319E10222F8EAE4896; AuthenticationToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1M2Q2ZTEzZS05ZDg4LTRiN2MtOTI3NC1mYjdiMTFiMzg0MjkiLCJpYXQiOjE2MzIxODk4NjIsInVzZXJFbWFpbEFkZHJlc3MiOiJ1c2VyMDg2LTMxMjQ5NEBtYWlsaW5hdG9yLmNvbSIsIm5iZiI6MTYzMjE4OTg2MiwiZXhwIjoxNjMyMjc2MjYyLCJpc3MiOiJDVURDLkF1dGhlbnRpY2F0aW9uIiwiYXVkIjoiQ1VEQy5TZXJ2aWNlcyJ9.zLDdzEoBvvKDKHHgwM9UqzNkL5No5HXgGEBebPCs-v4; CudlDealerPortal=ssoGuid=f9ebc759-9d6d-454d-b4e0-2b0e0576950d&amp;login=user086-312494@mailinator.com&amp;clientKey=40a60fff-6506-4b80-9e01-65c162dc1ea1&amp;clientCode=312494; SelectedDealerCode=312494</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://qa-dealer.cudl.com/CUDL/v-27138/App/Common/Views/SiteFooter.html</java.net.URL>
+</httpSample>
+<httpSample t="566319" it="0" lt="0" ct="224" ts="1632189870001" s="false" lb="/DealerPortal/DealerPortalAPI/v1/User" rc="Non HTTP response code: org.apache.http.NoHttpResponseException" rm="Non HTTP response message: qa-api.cudl.com:443 failed to respond" tn="Thread Group 1-56" dt="text" de="" by="2085" sby="0" sc="1" ec="1" ng="100" na="100" hn="QA-FSGHQV2-L">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyRW1haWxBZGRyZXNzIjoidXNlcjA5MC0zMTI0OTRAbWFpbGluYXRvci5jb20iLCJVc2VyRnVsbE5hbWUiOiJ0ZXN0IHRlc3QiLCJVc2VyR3VpZCI6IjEyZmRiYjQ1LWIyYTgtNDU2YS1iODM1LWU0YjBlODAxOGVmMCIsIkNsaWVudENvZGUiOiIzMTI0OTQiLCJDbGllbnROYW1lIjoiRGVhbGVyIFBvcnRhbCBMb2FkIFRlc3QgQSIsIlJvbGUiOlsiRGVhbGVyUG9ydGFsLlVzZXJBZG1pbmlzdHJhdG9yIiwiRGVhbGVyUG9ydGFsLkxlbmRpbmdVc2VyIl0sImlzcyI6IkNVREMuQXV0aG9yaXphdGlvbi5EUCIsImF1ZCI6IkNVREMuU2VydmljZS5EUCIsImV4cCI6MTYzMjI3NjI2NywibmJmIjoxNjMyMTg5ODY3fQ.sfMWwxxHWuFYInmx-PLB27quDNQLqtCrG4gxEMB5xFY
+Referer: https://qa-dealer.cudl.com/
+Accept-Language: en-US,en;q=0.5
+Origin: https://qa-dealer.cudl.com
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Accept: application/json, text/plain, */*
+Host: qa-api.cudl.com
+</requestHeader>
+  <responseData class="java.lang.String">org.apache.http.NoHttpResponseException: qa-api.cudl.com:443 failed to respond&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)&#xd;
+	at java.lang.Thread.run(Unknown Source)&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String">$Version=1; EAAuth=&quot;Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InZ6UkxveXBYRS00WHM4bmMtY2t3S2dQQmxfWSIsInR5cCI6IkpXVCIsIng1dCI6InZ6UkxveXBYRS00WHM4bmMtY2t3S2dQQmxfWSJ9.eyJuYmYiOjE2MzIxODk4NTksImV4cCI6MTYzMjE5MzQ1OSwiaXNzIjoiaHR0cHM6Ly9hcHAtZW50LWN1aWQtd2ViLXdpbi1sbnAtMDEuYXNlLWNvbW1vbi1ucC0wMS5hcHBzZXJ2aWNlZW52aXJvbm1lbnQubmV0IiwiYXVkIjpbImh0dHBzOi8vYXBwLWVudC1jdWlkLXdlYi13aW4tbG5wLTAxLmFzZS1jb21tb24tbnAtMDEuYXBwc2VydmljZWVudmlyb25tZW50Lm5ldC9yZXNvdXJjZXMiLCJjcGFwaSIsImFzYXBpIl0sImNsaWVudF9pZCI6ImN1ZGlyZWN0LmRpZ2l0YWxyZXRhaWwucWEiLCJzdWIiOiJ1c2VyMDkwLTMxMjQ5NEBtYWlsaW5hdG9yLmNvbSIsImF1dGhfdGltZSI6MTYzMjE4OTg1OSwiaWRwIjoibG9jYWwiLCJlbWFpbCI6InVzZXIwOTAtMzEyNDk0QG1haWxpbmF0b3IuY29tIiwiZW1haWxzIjoidXNlcjA5MC0zMTI0OTRAbWFpbGluYXRvci5jb20iLCJ0aWQiOiI3Y2M4MzI3YS01OGI1LTRkNTAtODI2OC1kMjhmNjViYWY2NWMiLCJzY29wZSI6WyJjcGFwaSIsImFzYXBpIl0sImFtciI6WyJMb2NhbCJdfQ.X_YAlXk_s6pMl8bzhZwg-TDZ7gBitHgyPAy9-ZShy1FkcVtBCvQpIOOHUDxhgSHSftLxNiKLbd9h0d7gVz81Px6FK6ciJ3dsojHF7UzP1CGl2ysDJZp6y3rwOnf-eRb-g7KSvj4D2B3l1Sh-Gwy91jWxyqIe9npFNtmre1jbJQNubo6GzgIo-WOc0FxWztQjdz7daqruZ7n4-JaX2WFzxfpH-80Eagw1aK1k8Yzs_0-LaomTGej_T-qXpWXsBiBKL59acNq8xnn9KMsWJcx8g7eZWKEfFgw_0X-o2mPKiamezRZtpM5RNAMPbsWjMmJMLnfveSFguVWY4aE8yCoLwg&quot;; $Path=&quot;/&quot;; $Domain=&quot;.cudl.com&quot;</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://qa-api.cudl.com/DealerPortal/DealerPortalAPI/v1/User</java.net.URL>
+</httpSample>
+<httpSample t="566365" it="0" lt="0" ct="147" ts="1632190026014" s="false" lb="/CUDL/{SiteVersion}/App/Common/Views/Overlay.html" rc="Non HTTP response code: org.apache.http.NoHttpResponseException" rm="Non HTTP response message: qa-dealer.cudl.com:443 failed to respond" tn="Thread Group 1-80" dt="text" de="" by="2088" sby="0" sc="1" ec="1" ng="100" na="100" hn="QA-FSGHQV2-L">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyRW1haWxBZGRyZXNzIjoidXNlcjA5Mi0zMTI0OTRAbWFpbGluYXRvci5jb20iLCJVc2VyRnVsbE5hbWUiOiJ0ZXN0IHRlc3QiLCJVc2VyR3VpZCI6IjFlODc0NmFlLTQxNjEtNGYwZC04YzY3LWRlOGNiMjFkNzc5NSIsIkNsaWVudENvZGUiOiIzMTI0OTQiLCJDbGllbnROYW1lIjoiRGVhbGVyIFBvcnRhbCBMb2FkIFRlc3QgQSIsIlJvbGUiOlsiRGVhbGVyUG9ydGFsLlVzZXJBZG1pbmlzdHJhdG9yIiwiRGVhbGVyUG9ydGFsLkxlbmRpbmdVc2VyIl0sImlzcyI6IkNVREMuQXV0aG9yaXphdGlvbi5EUCIsImF1ZCI6IkNVREMuU2VydmljZS5EUCIsImV4cCI6MTYzMjI3NjQyMiwibmJmIjoxNjMyMTkwMDIyfQ.e1Quy5m9jVHwyUoLhnlhC4KXUJEUsqA2LVXxzth9xzk
+Referer: https://qa-dealer.cudl.com/CUDL
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Accept: application/json, text/plain, */*
+Host: qa-dealer.cudl.com
+</requestHeader>
+  <responseData class="java.lang.String">org.apache.http.NoHttpResponseException: qa-dealer.cudl.com:443 failed to respond&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)&#xd;
+	at java.lang.Thread.run(Unknown Source)&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String">ASP.NET_SessionId=kigiicteyxyjrakdczjvbmcj; CUDIRECT=rd1o00000000000000000000ffff0a840a0ao8081; EAAuth=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InZ6UkxveXBYRS00WHM4bmMtY2t3S2dQQmxfWSIsInR5cCI6IkpXVCIsIng1dCI6InZ6UkxveXBYRS00WHM4bmMtY2t3S2dQQmxfWSJ9.eyJuYmYiOjE2MzIxOTAwMTUsImV4cCI6MTYzMjE5MzYxNSwiaXNzIjoiaHR0cHM6Ly9wbGFiMS1hcGkuY3VkaXJlY3QuY29tL2N1aWQiLCJhdWQiOlsiaHR0cHM6Ly9wbGFiMS1hcGkuY3VkaXJlY3QuY29tL2N1aWQvcmVzb3VyY2VzIiwiY3BhcGkiLCJhc2FwaSJdLCJjbGllbnRfaWQiOiJjdWRpcmVjdC5kaWdpdGFscmV0YWlsLnFhIiwic3ViIjoidXNlcjA5Mi0zMTI0OTRAbWFpbGluYXRvci5jb20iLCJhdXRoX3RpbWUiOjE2MzIxOTAwMTUsImlkcCI6ImxvY2FsIiwiZW1haWwiOiJ1c2VyMDkyLTMxMjQ5NEBtYWlsaW5hdG9yLmNvbSIsImVtYWlscyI6InVzZXIwOTItMzEyNDk0QG1haWxpbmF0b3IuY29tIiwidGlkIjoiN2NjODMyN2EtNThiNS00ZDUwLTgyNjgtZDI4ZjY1YmFmNjVjIiwic2NvcGUiOlsiY3BhcGkiLCJhc2FwaSJdLCJhbXIiOlsiTG9jYWwiXX0.JdOZms0ZmUK16uTw3Y0-SjnIMVWWsP_SVXUtSoW_58IBMkw9LsiFponuELgLRwU2XV4aNleuY_IINwDJIuOCVsAJebA8qaGx6Rgr00JW8D5A3QfCV2oF6RzpKIskcCTNaj3h_Kqmqvo9EduZL2ogaVFlAdQqgqhoZ4kjtoI_whQaZG-tuuAHU-TJYIV-lsuL8lqjzblRHjuoOEXcku6QrOiYanI7HPZwi3JxoNqXFnA14REOOpnHwaNIAP3omQpQ06I4ZYvci6fF3ARcyDUjtCql6m8Je_SLCCF2FSkf-PDhb7lpqRbFjtdjEFL5TheCvFQ9PtSokHr-LoIW67C-Lw; SSOAuth=dXNlcjA5Mi0zMTI0OTRAbWFpbGluYXRvci5jb206MHg4Mzk2NDJhNTlmZDYxMjA0NDE1ZmIwZGUyNjcwODdhZGQxZjkzMzViZjcxOGQ0YTI1YThmNWZiNGMzN2EyMTNmMGYyN2I2NTJkYThjMWFiN2ZjN2QyNzRkNDQwMDdhYTRkNGRlMjBhM2FmNGNlMDE5ZTk2MzZlZmI5MWI3YmEyNzRhZGU2MzBlMmNhNTg2ZjllYTk5ZTQzMDQ1YjIzZDRmYjEwNTkzMmYxZTg5OTlmZTllOTlkYjgxMDc2NDE2ZjFkYTUwNjIyM2RlZjBhMzU5MjFmZTZlZTYzZjNiMTUzMDBiZGQ5NTlmM2EyNzM2MTQ2OWNlMTUxNTg5ZjRjZjc5OTAwMGU4ZmU3MDExNzk4M2YwNTJmZDBhOGFjZWQxZDVjYWI5MzE2NTYzMDRmNzgwZDBmNmQ2YTRlOWYwMzM2NzNjMzU1NDAzODNmZTYxNTRlNDU2NTY3ODg4MjEwN2RkMjIwMWRiMDAxOGEyNDljZDEzNjY0YTg5N2QwNjk1ZTczYmViMWQ0ZGM2ODRhZDk3YzAwZWYwOTNmN2RmOGVmNTQ2NWIxMjQ0Yjk0NjZiZGExYTk3NGFlNWU0MDlmMjAwZjVhNjI1ZDYxZDFkYzQzZTc1OTNkN2M0OTJiMmFkNjQ0Yzk0ZDdiNGI3OTJhNGU0ZWZmYzMxNjk2MGMzYjM=; .ASPXFORMSAUTH=9604CEF7D625B14E9776CA5EC2E1FBAAD1EC3A032C5730F0CD95EB4D7A31A7A6A2380E80EBFEBCD0FC0C6A138B275DD203F07490C87B57A395A477F4544ED8D7EB050B5692DF4596D96307E24041D302BD6B67B1E5E7EA9DD2D490D9486499C788158A4A364B2F8A5F5367B7988B7777B8FB065B6FB20CB3E693DCE82A1D95F4BF185863; AuthenticationToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlMzM2NmRlNi0zMjZiLTRlZjUtOWZmOS02YjcyZjczZDUzNWYiLCJpYXQiOjE2MzIxOTAwMTcsInVzZXJFbWFpbEFkZHJlc3MiOiJ1c2VyMDkyLTMxMjQ5NEBtYWlsaW5hdG9yLmNvbSIsIm5iZiI6MTYzMjE5MDAxNiwiZXhwIjoxNjMyMjc2NDE2LCJpc3MiOiJDVURDLkF1dGhlbnRpY2F0aW9uIiwiYXVkIjoiQ1VEQy5TZXJ2aWNlcyJ9._ZP-6rMObGKN9iYiNfa2bPskPBGswcSF6jJUnRFavgI; CudlDealerPortal=ssoGuid=1e8746ae-4161-4f0d-8c67-de8cb21d7795&amp;login=user092-312494@mailinator.com&amp;clientKey=40a60fff-6506-4b80-9e01-65c162dc1ea1&amp;clientCode=312494; SelectedDealerCode=312494</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://qa-dealer.cudl.com/CUDL/v-27138/App/Common/Views/Overlay.html</java.net.URL>
+</httpSample>
+<httpSample t="566323" it="0" lt="0" ct="122" ts="1632190182386" s="false" lb="/API/DealQueue/v1/DealQueue?count=100&amp;startDate={currentUtcTime}" rc="Non HTTP response code: org.apache.http.NoHttpResponseException" rm="Non HTTP response message: qa-dealer.cudl.com:443 failed to respond" tn="Thread Group 1-60" dt="text" de="" by="2088" sby="0" sc="1" ec="1" ng="100" na="100" hn="QA-FSGHQV2-L">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Referer: https://qa-dealer.cudl.com/CUDL
+Accept-Language: en-US,en;q=0.5
+Origin: https://qa-dealer.cudl.com
+Request-Id: |yQndm.cNWUG
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyRW1haWxBZGRyZXNzIjoidXNlcjAwNy0zMTI0OTRAbWFpbGluYXRvci5jb20iLCJVc2VyRnVsbE5hbWUiOiJ0ZXN0IHRlc3QiLCJVc2VyR3VpZCI6IjBhODY2M2QwLWNiMzEtNDcxNi04ZGZhLWFhZjIwMjZjNjFlOSIsIkNsaWVudENvZGUiOiIzMTI0OTQiLCJDbGllbnROYW1lIjoiRGVhbGVyIFBvcnRhbCBMb2FkIFRlc3QgQSIsIlJvbGUiOlsiRGVhbGVyUG9ydGFsLk9yZ2FuaXphdGlvbkFkbWluaXN0cmF0b3IiLCJEZWFsZXJQb3J0YWwuQ3JlZGl0VXNlciJdLCJpc3MiOiJDVURDLkF1dGhvcml6YXRpb24uRFAiLCJhdWQiOiJDVURDLlNlcnZpY2UuRFAiLCJleHAiOjE2MzIyNzY1NzcsIm5iZiI6MTYzMjE5MDE3N30.JD1DGzlTemqQ57ACoT7NXNAL35RS4Xw-6VPlsatad44
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Content-Length: 0
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: qa-dealer.cudl.com
+</requestHeader>
+  <responseData class="java.lang.String">org.apache.http.NoHttpResponseException: qa-dealer.cudl.com:443 failed to respond&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)&#xd;
+	at java.lang.Thread.run(Unknown Source)&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String">ASP.NET_SessionId=jjpymg5z4u5dsvln3mgwciio; CUDIRECT=rd1o00000000000000000000ffff0a840a0ao8081; EAAuth=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InZ6UkxveXBYRS00WHM4bmMtY2t3S2dQQmxfWSIsInR5cCI6IkpXVCIsIng1dCI6InZ6UkxveXBYRS00WHM4bmMtY2t3S2dQQmxfWSJ9.eyJuYmYiOjE2MzIxOTAxNzIsImV4cCI6MTYzMjE5Mzc3MiwiaXNzIjoiaHR0cHM6Ly9hcHAtZW50LWN1aWQtd2ViLXdpbi1sbnAtMDEuYXNlLWNvbW1vbi1ucC0wMS5hcHBzZXJ2aWNlZW52aXJvbm1lbnQubmV0IiwiYXVkIjpbImh0dHBzOi8vYXBwLWVudC1jdWlkLXdlYi13aW4tbG5wLTAxLmFzZS1jb21tb24tbnAtMDEuYXBwc2VydmljZWVudmlyb25tZW50Lm5ldC9yZXNvdXJjZXMiLCJjcGFwaSIsImFzYXBpIl0sImNsaWVudF9pZCI6ImN1ZGlyZWN0LmRpZ2l0YWxyZXRhaWwucWEiLCJzdWIiOiJ1c2VyMDA3LTMxMjQ5NEBtYWlsaW5hdG9yLmNvbSIsImF1dGhfdGltZSI6MTYzMjE5MDE3MiwiaWRwIjoibG9jYWwiLCJlbWFpbCI6InVzZXIwMDctMzEyNDk0QG1haWxpbmF0b3IuY29tIiwiZW1haWxzIjoidXNlcjAwNy0zMTI0OTRAbWFpbGluYXRvci5jb20iLCJ0aWQiOiI3Y2M4MzI3YS01OGI1LTRkNTAtODI2OC1kMjhmNjViYWY2NWMiLCJzY29wZSI6WyJjcGFwaSIsImFzYXBpIl0sImFtciI6WyJMb2NhbCJdfQ.7FkbmmY2e0-czfJ0thskc6hNwL9f8p0x2YjAC_AP2qp_PxLWKZOq0D0Bb9P_G3UioGriNZMhEi27uDFbVFvsqeFlRha08ivbMraYGBFrVJ5hlKCdrASO4npq4VWq-h8kfab0FX6ReA1oKPzfYY-12CFZC2u2K5WXsfScAaMXNJtksMMt3pSkdgNU5npZ77j4cI5KvH9Cnia4fCkERJOEp5KY8oB69ZUq0HterZ0hP9Td4Qc6kNf-SZduOHLOmPpd_vS06pxi7vtEOIJ5MJdPQK-Xgm00RmQIB0rRu6UZlxhMLsQVIDzOHXaXhkE_ABPbVvX8RNiKNSleoEb7Hm6a9g; SSOAuth=dXNlcjAwNy0zMTI0OTRAbWFpbGluYXRvci5jb206MHg4Mzk2NDJhNTlmZDYxMjA0NDE1ZmIwZGUyNjcwODdhZGQxZjkzMzViZjcxOGQ0YTI1YThmNWZiNGMzN2EyMTNmMGYyN2I2NTJkYThjMWFiN2ZjN2QyNzRkNDQwMDdhYTRkNGRlMjBhM2FmNGNlMDE5ZTk2MzZlZmI5MWI3YmEyNzRhZGU2MzBlMmNhNTg2ZjllYTk5ZTQzMDQ1YjIzZDRmYjEwNTkzMmYxZTg5OTlmZTllOTlkYjgxMDc2NDE2ZjFkYTUwNjIyM2RlZjBhMzU5MjFmZTZlZTYzZjNiMTUzMDBiZGQ5NTlmM2EyNzM2MTQ2OWNlMTUxNTg5ZjRjZjc5OTAwMGU4ZmU3MDExNzk4M2YwNTJmZDBhOGFjZWQxZDVjYWI5MzE2NTYzMDRmNzgwZDBmNmQ2YTRlOWYwMzM2NzNjMzU1NDAzODNmZTYxNTRlNDU2NTY3ODg4MjEwN2RkMjIwMWRiMDAxOGEyNDljZDEzNjY0YTg5N2QwNjk1ZTczYmViMWQ0ZGM2ODRhZDk3YzAwZWYwOTNmN2RmOGVmNTQ2NWIxMjQ0Yjk0NjZiZGExYTk3NGFlNWU0MDlmMjAwZjVhNjI1ZDYxZDFkYzQzZTc1OTNkN2M0OTJiMmFkNjQ0Yzk0ZDdiNGI3OTJhNGU0ZWZmYzMxNjk2MGMzYjM=; .ASPXFORMSAUTH=AC608D05A9EEBCE61F29F0994E68214BAEBA10FDA7C9F437E6E4B959E7EB65E42ED2AD369227F5C1F6B6FD1F3E968B7D351110696CA6C42C79C44FFECDF80FFDFF1239D4B53B77F1EA70DF0F07D2E091D4F31D068389608E8439B2A7EC73A1D28DA99C0B2FA29EDE6795BAA817FDC07BD9AF45232F4EA87822724E95D4168661775F9330; AuthenticationToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4OWE4Njg4MC03NTFjLTQ2NzQtYjEyMy1hM2I2NDNlNmM2OWMiLCJpYXQiOjE2MzIxOTAxNzQsInVzZXJFbWFpbEFkZHJlc3MiOiJ1c2VyMDA3LTMxMjQ5NEBtYWlsaW5hdG9yLmNvbSIsIm5iZiI6MTYzMjE5MDE3NCwiZXhwIjoxNjMyMjc2NTc0LCJpc3MiOiJDVURDLkF1dGhlbnRpY2F0aW9uIiwiYXVkIjoiQ1VEQy5TZXJ2aWNlcyJ9.1VXJD4iKx_us5KfrtDEyYLneUPDJX-G5sVMtNwPgQ_A; CudlDealerPortal=ssoGuid=0a8663d0-cb31-4716-8dfa-aaf2026c61e9&amp;login=user007-312494@mailinator.com&amp;clientKey=40a60fff-6506-4b80-9e01-65c162dc1ea1&amp;clientCode=312494; SelectedDealerCode=312494</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://qa-dealer.cudl.com/API/DealQueue/v1/DealQueue?count=100&amp;startDate=2021-09-20T19:02:32.059-07</java.net.URL>
+</httpSample>
+<httpSample t="19718" it="0" lt="0" ct="19717" ts="1632190965728" s="false" lb="/css" rc="Non HTTP response code: javax.net.ssl.SSLHandshakeException" rm="Non HTTP response message: Remote host terminated the handshake" tn="Thread Group 1-58" dt="text" de="" by="2886" sby="0" sc="1" ec="1" ng="99" na="99" hn="QA-FSGHQV2-L">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Referer: https://qa-dealer.cudl.com/
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Accept: text/css,*/*;q=0.1
+Host: fonts.googleapis.com
+</requestHeader>
+  <responseData class="java.lang.String">javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake&#xd;
+	at sun.security.ssl.SSLSocketImpl.handleEOF(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.decode(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)&#xd;
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)&#xd;
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.hc.LazyLayeredConnectionSocketFactory.connectSocket(LazyLayeredConnectionSocketFactory.java:92)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$JMeterDefaultHttpClientConnectionOperator.connect(HTTPHC4Impl.java:326)&#xd;
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)&#xd;
+	at java.lang.Thread.run(Unknown Source)&#xd;
+Caused by: java.io.EOFException: SSL peer shut down incorrectly&#xd;
+	at sun.security.ssl.SSLSocketInputRecord.read(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketInputRecord.readHeader(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketInputRecord.decode(Unknown Source)&#xd;
+	at sun.security.ssl.SSLTransport.decode(Unknown Source)&#xd;
+	... 27 more&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700%2C900</java.net.URL>
+</httpSample>
+<httpSample t="566233" it="0" lt="0" ct="107" ts="1632190614598" s="false" lb="/CUDL/App/Content/LoggerConfig/ConsoleLoggerConfiguration.txt" rc="Non HTTP response code: org.apache.http.NoHttpResponseException" rm="Non HTTP response message: qa-dealer.cudl.com:443 failed to respond" tn="Thread Group 1-89" dt="text" de="" by="2088" sby="0" sc="1" ec="1" ng="70" na="70" hn="QA-FSGHQV2-L">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyRW1haWxBZGRyZXNzIjoidXNlcjAzNy0zMTI0OTRAbWFpbGluYXRvci5jb20iLCJVc2VyRnVsbE5hbWUiOiJ0ZXN0IHRlc3QiLCJVc2VyR3VpZCI6IjA0NTA0ZDAyLTA5MDctNDRkNS05NGUwLWY4Yjc1NjExNGYwMSIsIkNsaWVudENvZGUiOiIzMTI0OTQiLCJDbGllbnROYW1lIjoiRGVhbGVyIFBvcnRhbCBMb2FkIFRlc3QgQSIsIlJvbGUiOlsiRGVhbGVyUG9ydGFsLkxlbmRpbmdBZG1pbmlzdHJhdG9yIiwiRGVhbGVyUG9ydGFsLlZpZXdFbXBsb3llZUxvYW5zIl0sImlzcyI6IkNVREMuQXV0aG9yaXphdGlvbi5EUCIsImF1ZCI6IkNVREMuU2VydmljZS5EUCIsImV4cCI6MTYzMjI3NzAxNCwibmJmIjoxNjMyMTkwNjE0fQ.2LBFHoikskqpkCf9c69AUfAAlzv66ofSfFSBYeijhdM
+Referer: https://qa-dealer.cudl.com/CUDL
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Accept: application/json, text/plain, */*
+Host: qa-dealer.cudl.com
+</requestHeader>
+  <responseData class="java.lang.String">org.apache.http.NoHttpResponseException: qa-dealer.cudl.com:443 failed to respond&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)&#xd;
+	at java.lang.Thread.run(Unknown Source)&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String">ASP.NET_SessionId=5renas5wansh1h0zbun33sa3; CUDIRECT=rd1o00000000000000000000ffff0a840a0ao8081; EAAuth=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InZ6UkxveXBYRS00WHM4bmMtY2t3S2dQQmxfWSIsInR5cCI6IkpXVCIsIng1dCI6InZ6UkxveXBYRS00WHM4bmMtY2t3S2dQQmxfWSJ9.eyJuYmYiOjE2MzIxOTA1MTgsImV4cCI6MTYzMjE5NDExOCwiaXNzIjoiaHR0cHM6Ly9hcHAtZW50LWN1aWQtd2ViLXdpbi1sbnAtMDEuYXNlLWNvbW1vbi1ucC0wMS5hcHBzZXJ2aWNlZW52aXJvbm1lbnQubmV0IiwiYXVkIjpbImh0dHBzOi8vYXBwLWVudC1jdWlkLXdlYi13aW4tbG5wLTAxLmFzZS1jb21tb24tbnAtMDEuYXBwc2VydmljZWVudmlyb25tZW50Lm5ldC9yZXNvdXJjZXMiLCJjcGFwaSIsImFzYXBpIl0sImNsaWVudF9pZCI6ImN1ZGlyZWN0LmRpZ2l0YWxyZXRhaWwucWEiLCJzdWIiOiJ1c2VyMDM3LTMxMjQ5NEBtYWlsaW5hdG9yLmNvbSIsImF1dGhfdGltZSI6MTYzMjE5MDUxOCwiaWRwIjoibG9jYWwiLCJlbWFpbCI6InVzZXIwMzctMzEyNDk0QG1haWxpbmF0b3IuY29tIiwiZW1haWxzIjoidXNlcjAzNy0zMTI0OTRAbWFpbGluYXRvci5jb20iLCJ0aWQiOiI3Y2M4MzI3YS01OGI1LTRkNTAtODI2OC1kMjhmNjViYWY2NWMiLCJzY29wZSI6WyJjcGFwaSIsImFzYXBpIl0sImFtciI6WyJMb2NhbCJdfQ.CChH1B1Bzbaq5jQNb0s9SltFv6Mv_uQfsddT0a3GO8-VlqoyhdYYBQ0z3Z5dUvT0c3Fuir6K0i2DLFpYRB3eSCeIVaGs6mhnj9G-Wiw3Bx91zbtH8QQWGU4QGLmqhPmEj2TRrFqCYI_Mjbr4lTFKSrOnLuyM9aF9q_v-Ma5RIvkrUXsoVvuzr_A7aqFFiG1J4YAUPTTYhORFa7DgU6o_xQOKKJmbZmDvIHHsZGpih8HwVK_tch5T0-JuPBus-hzuUulkorZFKE5fwVgGpEYcMO3Zb44Ewvf6LvCPUjqazF32dxr7egAwtfnC7CELXSMDM3IfD_DvVz2sKr0kUt0p2w; SSOAuth=dXNlcjAzNy0zMTI0OTRAbWFpbGluYXRvci5jb206MHg4Mzk2NDJhNTlmZDYxMjA0NDE1ZmIwZGUyNjcwODdhZGQxZjkzMzViZjcxOGQ0YTI1YThmNWZiNGMzN2EyMTNmMGYyN2I2NTJkYThjMWFiN2ZjN2QyNzRkNDQwMDdhYTRkNGRlMjBhM2FmNGNlMDE5ZTk2MzZlZmI5MWI3YmEyNzRhZGU2MzBlMmNhNTg2ZjllYTk5ZTQzMDQ1YjIzZDRmYjEwNTkzMmYxZTg5OTlmZTllOTlkYjgxMDc2NDE2ZjFkYTUwNjIyM2RlZjBhMzU5MjFmZTZlZTYzZjNiMTUzMDBiZGQ5NTlmM2EyNzM2MTQ2OWNlMTUxNTg5ZjRjZjc5OTAwMGU4ZmU3MDExNzk4M2YwNTJmZDBhOGFjZWQxZDVjYWI5MzE2NTYzMDRmNzgwZDBmNmQ2YTRlOWYwMzM2NzNjMzU1NDAzODNmZTYxNTRlNDU2NTY3ODg4MjEwN2RkMjIwMWRiMDAxOGEyNDljZDEzNjY0YTg5N2QwNjk1ZTczYmViMWQ0ZGM2ODRhZDk3YzAwZWYwOTNmN2RmOGVmNTQ2NWIxMjQ0Yjk0NjZiZGExYTk3NGFlNWU0MDlmMjAwZjVhNjI1ZDYxZDFkYzQzZTc1OTNkN2M0OTJiMmFkNjQ0Yzk0ZDdiNGI3OTJhNGU0ZWZmYzMxNjk2MGMzYjM=; .ASPXFORMSAUTH=DD19F384B40C3481BCC00C39489B86C95F4C774B78778ADF5FF734AF97EACB6ADDCF055BE45F1E172A06A7BE0961D35F858A9A1184381BE22855C394D34546C81AD73876F0256E1879AFA169F13BEB72476F5A88118D845F3A32DF30AC460E1EF5849D4BA5ED31CCBE93BA1DB66789378F06475F555EC5D32A2FE20CC73FD3B22628D731; AuthenticationToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiNTNlYjc0Yi02MjVjLTRjZTctOWVmMS0xNzgyMDA4MTFmMmMiLCJpYXQiOjE2MzIxOTA2MDEsInVzZXJFbWFpbEFkZHJlc3MiOiJ1c2VyMDM3LTMxMjQ5NEBtYWlsaW5hdG9yLmNvbSIsIm5iZiI6MTYzMjE5MDYwMSwiZXhwIjoxNjMyMjc3MDAxLCJpc3MiOiJDVURDLkF1dGhlbnRpY2F0aW9uIiwiYXVkIjoiQ1VEQy5TZXJ2aWNlcyJ9.rhdQWLgFh8z2_gxzzUogBTu4bfrauf4ctdPNkLv5sFo; CudlDealerPortal=ssoGuid=04504d02-0907-44d5-94e0-f8b756114f01&amp;login=user037-312494@mailinator.com&amp;clientKey=40a60fff-6506-4b80-9e01-65c162dc1ea1&amp;clientCode=312494; SelectedDealerCode=312494</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://qa-dealer.cudl.com/CUDL/App/Content/LoggerConfig/ConsoleLoggerConfiguration.txt</java.net.URL>
+</httpSample>
+<httpSample t="565801" it="0" lt="0" ct="79" ts="1632190615123" s="false" lb="/DealerPortal/Lending/v1/SellerFilters/" rc="Non HTTP response code: org.apache.http.NoHttpResponseException" rm="Non HTTP response message: qa-api.cudl.com:443 failed to respond" tn="Thread Group 1-76" dt="text" de="" by="2085" sby="0" sc="1" ec="1" ng="70" na="70" hn="QA-FSGHQV2-L">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyRW1haWxBZGRyZXNzIjoidXNlcjAxOS0zMTI0OTRAbWFpbGluYXRvci5jb20iLCJVc2VyRnVsbE5hbWUiOiJ0ZXN0IHRlc3QiLCJVc2VyR3VpZCI6IjAzYTBjNjNjLTAyYjUtNGFhMC1iNjUyLTlkOTM4OTQ0YTdhZCIsIkNsaWVudENvZGUiOiIzMTI0OTQiLCJDbGllbnROYW1lIjoiRGVhbGVyIFBvcnRhbCBMb2FkIFRlc3QgQSIsIlJvbGUiOlsiRGVhbGVyUG9ydGFsLk9yZ2FuaXphdGlvbkFkbWluaXN0cmF0b3IiLCJEZWFsZXJQb3J0YWwuQ3JlZGl0VXNlciJdLCJpc3MiOiJDVURDLkF1dGhvcml6YXRpb24uRFAiLCJhdWQiOiJDVURDLlNlcnZpY2UuRFAiLCJleHAiOjE2MzIyNzcwMTIsIm5iZiI6MTYzMjE5MDYxMn0.FrOcdz_bNOfhVBquqLTCUvb-5hJVqd8RnAB3EIumBsE
+Referer: https://qa-dealer.cudl.com/
+Accept-Language: en-US,en;q=0.5
+Origin: https://qa-dealer.cudl.com
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Accept: application/json
+Host: qa-api.cudl.com
+</requestHeader>
+  <responseData class="java.lang.String">org.apache.http.NoHttpResponseException: qa-api.cudl.com:443 failed to respond&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)&#xd;
+	at java.lang.Thread.run(Unknown Source)&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String">$Version=1; EAAuth=&quot;Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6InZ6UkxveXBYRS00WHM4bmMtY2t3S2dQQmxfWSIsInR5cCI6IkpXVCIsIng1dCI6InZ6UkxveXBYRS00WHM4bmMtY2t3S2dQQmxfWSJ9.eyJuYmYiOjE2MzIxOTA1MTQsImV4cCI6MTYzMjE5NDExNCwiaXNzIjoiaHR0cHM6Ly9hcHAtZW50LWN1aWQtd2ViLXdpbi1sbnAtMDEuYXNlLWNvbW1vbi1ucC0wMS5hcHBzZXJ2aWNlZW52aXJvbm1lbnQubmV0IiwiYXVkIjpbImh0dHBzOi8vYXBwLWVudC1jdWlkLXdlYi13aW4tbG5wLTAxLmFzZS1jb21tb24tbnAtMDEuYXBwc2VydmljZWVudmlyb25tZW50Lm5ldC9yZXNvdXJjZXMiLCJjcGFwaSIsImFzYXBpIl0sImNsaWVudF9pZCI6ImN1ZGlyZWN0LmRpZ2l0YWxyZXRhaWwucWEiLCJzdWIiOiJ1c2VyMDE5LTMxMjQ5NEBtYWlsaW5hdG9yLmNvbSIsImF1dGhfdGltZSI6MTYzMjE5MDUxNCwiaWRwIjoibG9jYWwiLCJlbWFpbCI6InVzZXIwMTktMzEyNDk0QG1haWxpbmF0b3IuY29tIiwiZW1haWxzIjoidXNlcjAxOS0zMTI0OTRAbWFpbGluYXRvci5jb20iLCJ0aWQiOiI3Y2M4MzI3YS01OGI1LTRkNTAtODI2OC1kMjhmNjViYWY2NWMiLCJzY29wZSI6WyJjcGFwaSIsImFzYXBpIl0sImFtciI6WyJMb2NhbCJdfQ.YHn7SrWvxao_8N3dcpQV0hhmHM2rr7OZH_ZRTf1N-DM43pbD7v6Ft7bp5lHA1JThndDUZHINsLqPo-h6yPhvISOsC2pgCBV8APkdl9KFsPIjKL2v2vaVSxDCUT633YU-RXgGewY9eHhZJu1wagCMk9aMom07y9V7uy3zxQSEJUzpZkUi-OysGqfU8sGPJkJEE_4skzhsEGZQ7n8ow6faxq7WEpHzQVc_czgWjLpJxTaHFPKjhxvRWtqwcup0Qq53bhBqoAXFP-zogOogEHxkbtU1w2ThVl38mjprmwc6F_MTsAX1KOZaRFpUoFbINpGrWPchd98n0L7sjMMCldRj8w&quot;; $Path=&quot;/&quot;; $Domain=&quot;.cudl.com&quot;</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://qa-api.cudl.com/DealerPortal/Lending/v1/SellerFilters/</java.net.URL>
+</httpSample>
+<httpSample t="18227" it="0" lt="18224" ct="0" ts="1632191176394" s="false" lb="/cuid/api/token" rc="500" rm="Internal Server Error" tn="Thread Group 1-64" dt="text" de="" by="732" sby="637" sc="1" ec="1" ng="62" na="62" hn="QA-FSGHQV2-L">
+  <responseHeader class="java.lang.String">HTTP/1.1 500 Internal Server Error
+Date: Tue, 21 Sep 2021 02:26:34 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Cache-Control: no-cache
+Expires: -1
+Pragma: no-cache
+X-Content-Type-Options: nosniff
+X-Frame-Options: Deny
+Access-Control-Allow-Origin: https://qa-dealer.cudl.com
+Access-Control-Allow-Headers: origin, x-requested-with, accept, x-api-key, x-api-version, clientid, tenantid, Content-Type, Authorization, LenderCode, businessUnitID, correlationid, scopes, clientsecrets
+Access-Control-Max-Age: 3628800
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Referer: https://qa-dealer.cudl.com/
+clientId: cudirect.digitalretail.qa
+Accept-Language: en-US,en;q=0.5
+Origin: https://qa-dealer.cudl.com
+Accept: */*
+x-api-key: mDpMlPzv7Wv9JRAO5GzQVTUFsq8R3vj3
+tenantId: 7cc8327a-58b5-4d50-8268-d28f65baf65c
+x-api-version: v3
+Content-Type: application/json
+scopes: cpapi asapi
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Content-Length: 80
+Host: plab1-api.cudirect.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;error&quot;:{&quot;status&quot;:&quot;500&quot;,&quot;code&quot;:&quot;ServiceUnavailable&quot;,&quot;message&quot;:&quot;Legacy sso service is unavailable.&quot;}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;email&quot;:&quot;user036-312494@mailinator.com&quot;,&quot;password&quot;:&quot;Password1&quot;,&quot;deviceId&quot;:null}</queryString>
+  <java.net.URL>https://plab1-api.cudirect.com/cuid/api/token</java.net.URL>
+</httpSample>
+<httpSample t="15968" it="0" lt="15968" ct="0" ts="1632191178671" s="false" lb="/cuid/api/token" rc="500" rm="Internal Server Error" tn="Thread Group 1-82" dt="text" de="" by="732" sby="637" sc="1" ec="1" ng="62" na="62" hn="QA-FSGHQV2-L">
+  <responseHeader class="java.lang.String">HTTP/1.1 500 Internal Server Error
+Date: Tue, 21 Sep 2021 02:26:34 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Cache-Control: no-cache
+Expires: -1
+Pragma: no-cache
+X-Content-Type-Options: nosniff
+X-Frame-Options: Deny
+Access-Control-Allow-Origin: https://qa-dealer.cudl.com
+Access-Control-Allow-Headers: origin, x-requested-with, accept, x-api-key, x-api-version, clientid, tenantid, Content-Type, Authorization, LenderCode, businessUnitID, correlationid, scopes, clientsecrets
+Access-Control-Max-Age: 3628800
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Referer: https://qa-dealer.cudl.com/
+clientId: cudirect.digitalretail.qa
+Accept-Language: en-US,en;q=0.5
+Origin: https://qa-dealer.cudl.com
+Accept: */*
+x-api-key: mDpMlPzv7Wv9JRAO5GzQVTUFsq8R3vj3
+tenantId: 7cc8327a-58b5-4d50-8268-d28f65baf65c
+x-api-version: v3
+Content-Type: application/json
+scopes: cpapi asapi
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Content-Length: 80
+Host: plab1-api.cudirect.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;error&quot;:{&quot;status&quot;:&quot;500&quot;,&quot;code&quot;:&quot;ServiceUnavailable&quot;,&quot;message&quot;:&quot;Legacy sso service is unavailable.&quot;}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;email&quot;:&quot;user046-312494@mailinator.com&quot;,&quot;password&quot;:&quot;Password1&quot;,&quot;deviceId&quot;:null}</queryString>
+  <java.net.URL>https://plab1-api.cudirect.com/cuid/api/token</java.net.URL>
+</httpSample>
+<httpSample t="16211" it="0" lt="16211" ct="0" ts="1632191178450" s="false" lb="/cuid/api/token" rc="500" rm="Internal Server Error" tn="Thread Group 1-81" dt="text" de="" by="732" sby="637" sc="1" ec="1" ng="62" na="62" hn="QA-FSGHQV2-L">
+  <responseHeader class="java.lang.String">HTTP/1.1 500 Internal Server Error
+Date: Tue, 21 Sep 2021 02:26:34 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Cache-Control: no-cache
+Expires: -1
+Pragma: no-cache
+X-Content-Type-Options: nosniff
+X-Frame-Options: Deny
+Access-Control-Allow-Origin: https://qa-dealer.cudl.com
+Access-Control-Allow-Headers: origin, x-requested-with, accept, x-api-key, x-api-version, clientid, tenantid, Content-Type, Authorization, LenderCode, businessUnitID, correlationid, scopes, clientsecrets
+Access-Control-Max-Age: 3628800
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Referer: https://qa-dealer.cudl.com/
+clientId: cudirect.digitalretail.qa
+Accept-Language: en-US,en;q=0.5
+Origin: https://qa-dealer.cudl.com
+Accept: */*
+x-api-key: mDpMlPzv7Wv9JRAO5GzQVTUFsq8R3vj3
+tenantId: 7cc8327a-58b5-4d50-8268-d28f65baf65c
+x-api-version: v3
+Content-Type: application/json
+scopes: cpapi asapi
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Content-Length: 80
+Host: plab1-api.cudirect.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;error&quot;:{&quot;status&quot;:&quot;500&quot;,&quot;code&quot;:&quot;ServiceUnavailable&quot;,&quot;message&quot;:&quot;Legacy sso service is unavailable.&quot;}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;email&quot;:&quot;user048-312494@mailinator.com&quot;,&quot;password&quot;:&quot;Password1&quot;,&quot;deviceId&quot;:null}</queryString>
+  <java.net.URL>https://plab1-api.cudirect.com/cuid/api/token</java.net.URL>
+</httpSample>

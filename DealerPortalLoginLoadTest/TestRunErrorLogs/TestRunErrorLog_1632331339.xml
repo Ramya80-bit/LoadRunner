@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="21035" it="0" lt="0" ct="21034" ts="1632331518776" s="false" lb="https://uat-dealer.cudl.com" rc="Non HTTP response code: javax.net.ssl.SSLHandshakeException" rm="Non HTTP response message: Remote host terminated the handshake" tn="Thread Group 1-29" dt="text" de="" by="2886" sby="0" sc="1" ec="1" ng="100" na="100" hn="QA-FSGHQV2-L">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept-Language: en-US,en;q=0.5
+Upgrade-Insecure-Requests: 1
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Host: uat-dealer.cudl.com
+</requestHeader>
+  <responseData class="java.lang.String">javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake&#xd;
+	at sun.security.ssl.SSLSocketImpl.handleEOF(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.decode(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)&#xd;
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)&#xd;
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.hc.LazyLayeredConnectionSocketFactory.connectSocket(LazyLayeredConnectionSocketFactory.java:92)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$JMeterDefaultHttpClientConnectionOperator.connect(HTTPHC4Impl.java:326)&#xd;
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)&#xd;
+	at java.lang.Thread.run(Unknown Source)&#xd;
+Caused by: java.io.EOFException: SSL peer shut down incorrectly&#xd;
+	at sun.security.ssl.SSLSocketInputRecord.read(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketInputRecord.readHeader(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketInputRecord.decode(Unknown Source)&#xd;
+	at sun.security.ssl.SSLTransport.decode(Unknown Source)&#xd;
+	... 27 more&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://uat-dealer.cudl.com/</java.net.URL>
+</httpSample>
+<httpSample t="21011" it="0" lt="0" ct="21010" ts="1632331541707" s="false" lb="/CUDL" rc="Non HTTP response code: org.apache.http.conn.HttpHostConnectException" rm="Non HTTP response message: Connect to uat-dealer.cudl.com:443 [uat-dealer.cudl.com/10.142.16.31] failed: Connection timed out: connect" tn="Thread Group 1-93" dt="text" de="" by="2875" sby="0" sc="1" ec="1" ng="100" na="100" hn="QA-FSGHQV2-L">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Referer: https://uat-dealer.cudl.com/Home/Login
+Accept-Language: en-US,en;q=0.5
+Upgrade-Insecure-Requests: 1
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Host: uat-dealer.cudl.com
+</requestHeader>
+  <responseData class="java.lang.String">org.apache.http.conn.HttpHostConnectException: Connect to uat-dealer.cudl.com:443 [uat-dealer.cudl.com/10.142.16.31] failed: Connection timed out: connect&#xd;
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$JMeterDefaultHttpClientConnectionOperator.connect(HTTPHC4Impl.java:326)&#xd;
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)&#xd;
+	at java.lang.Thread.run(Unknown Source)&#xd;
+Caused by: java.net.ConnectException: Connection timed out: connect&#xd;
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)&#xd;
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)&#xd;
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)&#xd;
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)&#xd;
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)&#xd;
+	at java.net.PlainSocketImpl.connect(Unknown Source)&#xd;
+	at java.net.SocksSocketImpl.connect(Unknown Source)&#xd;
+	at java.net.Socket.connect(Unknown Source)&#xd;
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.hc.LazyLayeredConnectionSocketFactory.connectSocket(LazyLayeredConnectionSocketFactory.java:92)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)&#xd;
+	... 19 more&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String">ASP.NET_SessionId=obrhuikembydjt3v42r3adlt; CUDIRECT=!5fIKItBi1F2tyrpQnWr4DvoEzc6ZRtdshwhnqiaeQOMdS2wJFdRUbDE8A82d/+Bz/+5q7fLhHR3goHmtTy5aJEPgklec1UWf9Q+hIx1BXw==; f5avraaaaaaaaaaaaaaaa_session_=KPHDBHBFMDJCFIADLDFEBFLLKIALCKFJGHNBKCALPFNMKGIMPMKNOLPGDNBHMBMFBAGDLLDHGGCCIBMKAACAJJHEMGLCBCJHBENLGNGGDECNKKJJBIOPDNGHLIPHJLKI; ADRUM_BTa=R:38|g:18a8ae8d-dfd4-4711-b728-2c5ed5f0461b|n:cudirect-test_c88b7e56-8b1c-445a-abe9-fa0206b7ff83; ADRUM_BT1=R:38|i:309705|e:3815; SameSite=None; AICorrelationId=80e4300f-e429-4a20-a9ba-c355d727045d; SSOAuth=dXNlcjA4OS0zMTI1ODdAbWFpbGluYXRvci5jb206MHhhYTExODZhZDBiZWY5YWRhNjYzZjVjNmNiYTIwNmE4NDY4YzkyZjJlNjBmZTFiMjEyMTZmNDY1NGZkZGI5OTAyYWNjNTQ5NzU2YmQ3ODdjOGVjYTEyZDI2MGZhMDZiYzhlY2ZiMWMwOWFjMjgzNjhmOTk1NTFmNzMwMTZhODI0NmRlM2U0ZGE4ZDcxMWU5MTkxMzA1NjZmYTNkZGM3YjAzZmYxYzYwMDZhMDg4MDFlY2IwNmZmMDhmZDE5MTBlYmE4NzYzODAxZjVjNzQ2NTcwZTE4NGU3OTc4ZmY2ZjU2MGNmNjM4OGExNDExMWYwMjZhYjg2N2UwMDRmYjgxYTVhODdkNDFkODc1MzM2ODAyMGNhMzIyYjMzYzJhNGE4OWJiMGZkMTZmNmNmNDllZmM4ZWU4NDc5M2QzNjM1NDg1NmYxN2RjN2MzMGFmNTY4YWMwMGNiNzQxNTliNDExMTcwMjgwZTgwOWU5OGI4NzZjNTM2NTE2OTVhNjM1NzZkZTI3YTdkN2UwNGY0YmNmNWI2NmZiOTMxNTAzZTQ2YjNhZTMzMGNmN2U4MmFiODc5MWE2YTJiN2Q2NmQxNjRkZDFkY2QyMWJiMTkyNzdkYTA1NzQyY2VhOTdjMzE1MzY2OTUzZGQwYTY1ODg0ZThhNWQ3ZWE0ZTAyMzk1Yzc4NTQ=; .ASPXFORMSAUTH=35C087BF5F798441765145C32816587F65F2A3CF06BA8FF46B79C62FC014D1689BBB3620C638769A3803CC47E4D6BF452447BA11BFEDF8A135049BFB10F108C1D9A1C4DBD4D42AC2198A67F474A93FBD5DEB7D97BF9EE65C51622AD7DEC7A742514F34D8111C3C831FB6B8224ADD4AF1227FA819F23F7E5B518EFB064326EF63D00F8EF0; AuthenticationToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5NDFiNDk5ZC01M2ZmLTQ3MmItYmJiMi02NTMzMWViYjA5YTgiLCJpYXQiOjE2MzIzMzE1MzksInVzZXJFbWFpbEFkZHJlc3MiOiJ1c2VyMDg5LTMxMjU4N0BtYWlsaW5hdG9yLmNvbSIsIm5iZiI6MTYzMjMzMTUzOCwiZXhwIjoxNjMyNDE3OTM4LCJpc3MiOiJDVURDLkF1dGhlbnRpY2F0aW9uIiwiYXVkIjoiQ1VEQy5TZXJ2aWNlcyJ9.30qrNSy8yyd0E-Wps74y3sLYMuuB4TQAlaNqG8qh4ww; CudlDealerPortal=ssoGuid=f5a6f4cc-49e8-47fb-a9d0-c51e41d6c37f&amp;login=user089-312587@mailinator.com&amp;clientKey=a1eeacdc-9362-4d0a-8369-d7c4560b3f4f&amp;clientCode=312587; SelectedDealerCode=312587</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://uat-dealer.cudl.com/CUDL</java.net.URL>
+</httpSample>
+<httpSample t="21024" it="0" lt="0" ct="21024" ts="1632331579981" s="false" lb="/CUDL/App/Content/LoggerConfig/InsightLoggerConfiguration.txt" rc="Non HTTP response code: javax.net.ssl.SSLHandshakeException" rm="Non HTTP response message: Remote host terminated the handshake" tn="Thread Group 1-5" dt="text" de="" by="2886" sby="0" sc="1" ec="1" ng="100" na="100" hn="QA-FSGHQV2-L">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyRW1haWxBZGRyZXNzIjoidXNlcjA5MS0zMTI1ODdAbWFpbGluYXRvci5jb20iLCJVc2VyRnVsbE5hbWUiOiJ0ZXN0IHRlc3QiLCJVc2VyR3VpZCI6IjZiNzNmMTkyLWJhNDQtNDg5MS05MjdiLTUyNjhjMDQzYmE3ZCIsIkNsaWVudENvZGUiOiIzMTI1ODciLCJDbGllbnROYW1lIjoiTG9naW4gTG9hZCBUZXN0aW5nIiwiUm9sZSI6WyJEZWFsZXJQb3J0YWwuVXNlckFkbWluaXN0cmF0b3IiLCJEZWFsZXJQb3J0YWwuTGVuZGluZ1VzZXIiXSwiaXNzIjoiQ1VEQy5BdXRob3JpemF0aW9uLkRQIiwiYXVkIjoiQ1VEQy5TZXJ2aWNlLkRQIiwiZXhwIjoxNjMyNDE3OTc5LCJuYmYiOjE2MzIzMzE1Nzl9.aXeraIBVbBHniYthXU9hjvq7RhshcTROiQ14zopJXLU
+Referer: https://uat-dealer.cudl.com/CUDL
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Accept: application/json, text/plain, */*
+Host: uat-dealer.cudl.com
+</requestHeader>
+  <responseData class="java.lang.String">javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake&#xd;
+	at sun.security.ssl.SSLSocketImpl.handleEOF(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.decode(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)&#xd;
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)&#xd;
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.hc.LazyLayeredConnectionSocketFactory.connectSocket(LazyLayeredConnectionSocketFactory.java:92)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$JMeterDefaultHttpClientConnectionOperator.connect(HTTPHC4Impl.java:326)&#xd;
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)&#xd;
+	at java.lang.Thread.run(Unknown Source)&#xd;
+Caused by: java.io.EOFException: SSL peer shut down incorrectly&#xd;
+	at sun.security.ssl.SSLSocketInputRecord.read(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketInputRecord.readHeader(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketInputRecord.decode(Unknown Source)&#xd;
+	at sun.security.ssl.SSLTransport.decode(Unknown Source)&#xd;
+	... 27 more&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String">ASP.NET_SessionId=yflkfwgi0fzo32h525ndq4h5; CUDIRECT=!hPnrsHv8ejjANtlQnWr4DvoEzc6ZRlhoke1lF8DHmpFMbY3PaaiCA6Vr4mpUGMeijApL9i8Qe4k5XcUGO7fEM1dAIAsKHBjUSn4mzHKnIw==; f5avraaaaaaaaaaaaaaaa_session_=HFAACKGBCPIBPGKNBMDBFLDGKAHDADIOCCFGHBGPEGFHNKMHBLCCNNAJFFBIMIFKNHLDNNEPHGKNMDCEDLJACLDMOGELLOIJNOLEABDEHILFDHOEDOBBMCLBHMJEFPIL; SSOAuth=dXNlcjA5MS0zMTI1ODdAbWFpbGluYXRvci5jb206MHgyY2E4MGY3ZGM3MGNmOWI3ZWI2ZmMwNDBkY2YzZjM2ZDQ5YmE1NWNiMTk4YTUxMTdmMjAwODk4OTc1MWI1ZGRhNmZlNzE3NWVhZGRkMmVlZGZhN2M5MGFjYWE5ODBkYTUzNTE2ODM2MjE5MjA5OWU0NzMzOTI0OWFlNGY3ZmRkMGM2M2EwOTZmNDg0MjU0NzlkY2M4Y2M4NGNhNDA0ZWY4MTkxZDFjMmIwM2FiYmFjYzE3OTAyNTkxMGNhYWRlZmYzZjYwZTk1MWMwYjU5MWFhMzhhYTJkMTg3MjIxY2JmNzc2YjAzMzRjN2Y5NTMzZGE0ZmFjNzMzODAwNmQwYjJiNWZlNjNjNzA0MzQ3YjA1NDA2YmVmYmIwNmQ3NjBiMTc0OTBiYWVkNDNlMjQ1MjY2MTBlYTBmYjRhOTc5NzBmNjMwZDJiMzFjYjIyYjcxNzcxMDJkMDQxZDRjZTJlZjhhMGNmNmIwMmQ1ZTM5YjM3NjQyOGQ0NmE0ZDQxNDQxOTNiZDNjNTlhMjYxMDM4Y2Q4OGUyYTRkMDUxYjkxYjgzOGVmMGEwNzJlMzRhNDQyYWY1MDQ4OWQyOTc4Y2Y3MzMwYzM2ODIyMzAzMDM3ZWE4ZWJhN2U0NzEyYjhiODE0YWU1ZGJkODBkNzQxNjExM2YyNDc5OGY5Y2QzMTlmZWM=; .ASPXFORMSAUTH=6C8276AA2463FCFC5AD2EB4C4D7B9F35A4D0A4E5C06D10F04469E24BA96C802CEC64A1F8A9E62DFF90625103848D8AA74639BDE3523092904583003A1A35507E3241DEB725927A36CE4F2DA455624D042C013D1ECE5C683F8A93E94824EC15D2530EF08E1FB2F92A5A4901C043B1FA51A4F3E7E4196F7ED1696881CEF683807D6E84970F; AuthenticationToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3OWUwNjg5My0yMDQzLTRlNTMtOGYzOS1iY2E4YjNkZWY0MGEiLCJpYXQiOjE2MzIzMzE1NzMsInVzZXJFbWFpbEFkZHJlc3MiOiJ1c2VyMDkxLTMxMjU4N0BtYWlsaW5hdG9yLmNvbSIsIm5iZiI6MTYzMjMzMTU3MiwiZXhwIjoxNjMyNDE3OTcyLCJpc3MiOiJDVURDLkF1dGhlbnRpY2F0aW9uIiwiYXVkIjoiQ1VEQy5TZXJ2aWNlcyJ9.p4X5wwSQrIKDNDNcr7FVICOtHW6smiSaXbRP1BL2fqg; CudlDealerPortal=ssoGuid=6b73f192-ba44-4891-927b-5268c043ba7d&amp;login=user091-312587@mailinator.com&amp;clientKey=a1eeacdc-9362-4d0a-8369-d7c4560b3f4f&amp;clientCode=312587; SelectedDealerCode=312587; ADRUM_BTa=R:32|g:fc9dbfd9-ee18-4ed6-8ae2-61ad63641bb5|n:cudirect-test_c88b7e56-8b1c-445a-abe9-fa0206b7ff83; SameSite=None; ADRUM_BT1=R:32|i:322699|e:1100</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://uat-dealer.cudl.com/CUDL/App/Content/LoggerConfig/InsightLoggerConfiguration.txt</java.net.URL>
+</httpSample>
+<httpSample t="21078" it="0" lt="0" ct="21078" ts="1632331857850" s="false" lb="/CUDL" rc="Non HTTP response code: javax.net.ssl.SSLHandshakeException" rm="Non HTTP response message: Remote host terminated the handshake" tn="Thread Group 1-3" dt="text" de="" by="2886" sby="0" sc="1" ec="1" ng="100" na="100" hn="QA-FSGHQV2-L">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Referer: https://uat-dealer.cudl.com/Home/Login
+Accept-Language: en-US,en;q=0.5
+Upgrade-Insecure-Requests: 1
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Host: uat-dealer.cudl.com
+</requestHeader>
+  <responseData class="java.lang.String">javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake&#xd;
+	at sun.security.ssl.SSLSocketImpl.handleEOF(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.decode(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)&#xd;
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)&#xd;
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.hc.LazyLayeredConnectionSocketFactory.connectSocket(LazyLayeredConnectionSocketFactory.java:92)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$JMeterDefaultHttpClientConnectionOperator.connect(HTTPHC4Impl.java:326)&#xd;
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)&#xd;
+	at java.lang.Thread.run(Unknown Source)&#xd;
+Caused by: java.io.EOFException: SSL peer shut down incorrectly&#xd;
+	at sun.security.ssl.SSLSocketInputRecord.read(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketInputRecord.readHeader(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketInputRecord.decode(Unknown Source)&#xd;
+	at sun.security.ssl.SSLTransport.decode(Unknown Source)&#xd;
+	... 27 more&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String">ASP.NET_SessionId=ujm0zw13eifcbu4bpcabcw4b; CUDIRECT=!3/zBz+EtVFl5wYdQnWr4DvoEzc6ZRtMqjsBY1DP0vLAD/qxIcdGR73SACM9G/SF4/UbFUqqHD2b9/ILa4JhL99ma02cIT8foxZyiO+2RPw==; f5avraaaaaaaaaaaaaaaa_session_=CMIIPLFKJKIODJNMOMCOMNNJKGOCNOOAIHKHJCJPOLOOJNMKCPFFKCELEILHABPGEFLDNIDGNHPEAIJNKCHADEIOPGFOCGNBIMEBONAMIPKBMGNLPONKABGFKBNLDNMM; ADRUM_BTa=R:38|g:42b6e3ff-aedc-4c69-93f6-05ecdc42f616|n:cudirect-test_c88b7e56-8b1c-445a-abe9-fa0206b7ff83; ADRUM_BT1=R:38|i:309705|e:7825; SameSite=None; AICorrelationId=77d32326-45a3-4e22-bd05-7b99f53966c8; SSOAuth=dXNlcjA0NC0zMTI1ODdAbWFpbGluYXRvci5jb206MHhlNjYzMGVjNmE3ZjNhYmNiYmZkZjE2ZDRhM2Q2ODFiNWNhYjlmNTI4ZGRiN2Q3YTBlMjc3OTkzZTc2MDE5NTAxMGZmYzBiNDc4NzJhNjE0MDUwMmMyZTUyMmQ5Y2Y3M2FjYWU5NjcwNzkwNTAxNWI5MWYwNDBkMDE1MWZmYThkNDdiN2YwYzUxNzAxOWYyODEyYmU3ZmM2YzYwMmI1ZmQ3YTdlZGI3YTBlMjU1MjZkYjJiZWI2ZDkyOTE0OGY5NzFmYTMzMDAyNjJjNTVhZGI1ZmU2NTgzMzllZmFmZjE0YWZlOTQwYTBhZDE2NjIzMmNmYzljNjVjNTU2YmRkZTdkYWQ5Y2ZiYjE3OTdlZWVlNGYxNTI5MWU0MGI0MzVhMWM2Y2I3ZmU5YjkzZDFiMzhkZDUxOTU4Mjk4ZDljYmQ1ZDJjNDhjMTc1MGQxZTc0YTA4MjY2ZWRlMDg5ZmFhOWE2NGI4MjM2OGY2NWJmZTU0NGYzZDIwOTU4MzdiZDE3NmMyNGFlMjIzZTY3YjQ2MTZkMDU5YzZkNTg1ZWJkNTFjNmE3MWE1ZDMzM2I0NWU4OGJlMDg4ZDBlNDBjZjQ3MjUzZDM4Njc2NzZlYjA5ODFhY2RjMDJmZDQwYTZkNDg0ZjEyNTExYmU2MzI3OWVhYzEwYzJmMTE3YWIwZDQ3YjA=; .ASPXFORMSAUTH=C8226FA9FDDD54BB652647229C8C57D9329111DD7307E1C2F7416D9C6A075E658810E3D230A17A2ADD8674D05778F1852BEDFF04342DA76B5CC1D5DDFD6E464AB4EB0A96896B59EDA9E5507BC89CE8568150D59290F640EF2A892300515542C2AC6C6FFA8569FC27DCAC311F49B7C82D14CF70A43EE1EA936488C8353EA1739025E0A103; AuthenticationToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJmMDc1MzgzNS1kOTg0LTQ3N2YtYjFhMS05NWM5NGRlNTZlZDIiLCJpYXQiOjE2MzIzMzE4NTMsInVzZXJFbWFpbEFkZHJlc3MiOiJ1c2VyMDQ0LTMxMjU4N0BtYWlsaW5hdG9yLmNvbSIsIm5iZiI6MTYzMjMzMTg1MywiZXhwIjoxNjMyNDE4MjUzLCJpc3MiOiJDVURDLkF1dGhlbnRpY2F0aW9uIiwiYXVkIjoiQ1VEQy5TZXJ2aWNlcyJ9.8-3XO_WKdaCmOAt5GbzofgUWlHcdZnsFpoH5Io4dwR4; CudlDealerPortal=ssoGuid=a5a56065-fdc9-4f30-a3d0-68603a8bded6&amp;login=user044-312587@mailinator.com&amp;clientKey=a1eeacdc-9362-4d0a-8369-d7c4560b3f4f&amp;clientCode=312587; SelectedDealerCode=312587</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://uat-dealer.cudl.com/CUDL</java.net.URL>
+</httpSample>
+<httpSample t="21027" it="0" lt="0" ct="21026" ts="1632332057991" s="false" lb="/CUDL/scripts/CUDLApp" rc="Non HTTP response code: javax.net.ssl.SSLHandshakeException" rm="Non HTTP response message: Remote host terminated the handshake" tn="Thread Group 1-47" dt="text" de="" by="2886" sby="0" sc="1" ec="1" ng="45" na="45" hn="QA-FSGHQV2-L">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Referer: https://uat-dealer.cudl.com/CUDL
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Accept: */*
+Host: uat-dealer.cudl.com
+</requestHeader>
+  <responseData class="java.lang.String">javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake&#xd;
+	at sun.security.ssl.SSLSocketImpl.handleEOF(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.decode(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)&#xd;
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)&#xd;
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.hc.LazyLayeredConnectionSocketFactory.connectSocket(LazyLayeredConnectionSocketFactory.java:92)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$JMeterDefaultHttpClientConnectionOperator.connect(HTTPHC4Impl.java:326)&#xd;
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)&#xd;
+	at java.lang.Thread.run(Unknown Source)&#xd;
+Caused by: java.io.EOFException: SSL peer shut down incorrectly&#xd;
+	at sun.security.ssl.SSLSocketInputRecord.read(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketInputRecord.readHeader(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketInputRecord.decode(Unknown Source)&#xd;
+	at sun.security.ssl.SSLTransport.decode(Unknown Source)&#xd;
+	... 27 more&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String">ASP.NET_SessionId=qeuh5mcqly4tbb0j10t1yeer; CUDIRECT=!uVUdMxqUJWDn4chQnWr4DvoEzc6ZRmE43A92ta6OnTmGbXLYqSbCZW5CduefSB6+nIo9W6Ft3g2ChS1Ikg7NV/lx8LNMYLo5eOS66fz1Og==; f5avraaaaaaaaaaaaaaaa_session_=EBNKALHPJFJJFKCBALDOAEGCIEPOAABJABHJMFIFCJIALGNHPLAEIHLGENOKCLEEDPGDGPNPHIDIPAAADALAJKMBMGEJOHMKLCLIHDNKMFKIMHFLMJAFAMLEJKOMFDGO; AICorrelationId=1f26fe34-0b94-4cb9-abe5-45a99feba287; SSOAuth=dXNlcjA1Mi0zMTI1ODdAbWFpbGluYXRvci5jb206MHg1Y2Y4NWQwMTMwYTNjYTlhY2RkZDU0M2VlYWIxN2JhZDY3OWRmZWI0NmE5Njg2OWZmMGMzMDZjM2RlZTk4NTIwYzcxMGU4ZDRhMDUyZGNlZGQ2ZTcxODBhNzlmNmY3MzdlOTQxZWUzNDg4MTI5ZjU1YzhiZDAwODI2NWNmZWM4YWYzZjVhNzFkYWY0NDMyNDIyNWUzN2NiMTQzNmQwNzhmZDhjY2I0ZGJmMmVhYWVhNWIyMGVhYzU5MTU3MDgzZTZiYWYyNmY3M2UzYjI2NGVhNmJhMTE4YmZkOGNjYTFjZTkzOTJlNzc1NDFlMjA5YTg1N2RhNmM0MWY5NDVjYmNiNmRhN2E1OWE4ZjU3NDgxZjI0MjE4MGY0YzYyYzI1MTI0YWZlYzU5ZGJlZTE0MTQyYzBiMmQ4Yzc1ZDMyNTY1OGFmMmFiZmMwOWY3NWZlMGMwYzdmM2JiZjU5YzgxMGFhZTgyYmY1NzRkYjFkNDc2Mzk4ODY4MTljZGU0ZjdkYzQ4YmZlOWVjNTI0MWY0YzRiYmNlMzllNTU3MzgzOTk1MTJjMTlkZWZjMzY1NTI4MGRlNWYxMWQzZjM0MWRlZWRiNjAwMjQyOTkwODliZjJkNGM2NjdjMjBhYzgzNzc0Yzg2ODY0YzliYjE0NWJhOTNmNjIzODRlZmNkNTU0ZWY=; .ASPXFORMSAUTH=74F24D2346A49F939EBC154BCF712A78D1C93CF9D2194A16A544E47AB75C91F542453578B68DBB02E68F9F8885BC891A7B11FD21BF7B497517A153D0BEF5A307A7A7DC313F41AF403160A697936E9B7AFFF3AAD6FFA628BA5A7124E17B56FDCF9BFE84B9CCF50A973C9863E4F3D9FE3C9CB986AB35E5C15A1D50FFB21436DD92889438F8; AuthenticationToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJmZjAwZGQwMC0xNWFlLTQ1NjEtYTk3ZC1jMTkzZGVlNjBhOGUiLCJpYXQiOjE2MzIzMzIwNTMsInVzZXJFbWFpbEFkZHJlc3MiOiJ1c2VyMDUyLTMxMjU4N0BtYWlsaW5hdG9yLmNvbSIsIm5iZiI6MTYzMjMzMjA1MywiZXhwIjoxNjMyNDE4NDUzLCJpc3MiOiJDVURDLkF1dGhlbnRpY2F0aW9uIiwiYXVkIjoiQ1VEQy5TZXJ2aWNlcyJ9.kBINFwEgle6cySfStJNtfgwhBGTstaLM5j86RMj5m6w; CudlDealerPortal=ssoGuid=c4bd33e9-b77a-4d22-8224-2f080d862478&amp;login=user052-312587@mailinator.com&amp;clientKey=a1eeacdc-9362-4d0a-8369-d7c4560b3f4f&amp;clientCode=312587; SelectedDealerCode=312587; ADRUM_BTa=R:32|g:c3e0ee71-a391-480d-9e0f-b3a45030cc78|n:cudirect-test_c88b7e56-8b1c-445a-abe9-fa0206b7ff83; SameSite=None</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://uat-dealer.cudl.com/CUDL/scripts/CUDLApp?v=qQ7XfrMNQX6Uxn02YLRI5Av-f5hrC-w5QFPhZTt6yss1</java.net.URL>
+</httpSample>
+<httpSample t="566306" it="0" lt="0" ct="152" ts="1632331585554" s="false" lb="/DealerPortal/DealerPortalAPI/v1/DealerStatistics" rc="Non HTTP response code: org.apache.http.NoHttpResponseException" rm="Non HTTP response message: uat-api.cudl.com:443 failed to respond" tn="Thread Group 1-100" dt="text" de="" by="2086" sby="0" sc="1" ec="1" ng="1" na="1" hn="QA-FSGHQV2-L">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyRW1haWxBZGRyZXNzIjoidXNlcjA0MS0zMTI1ODdAbWFpbGluYXRvci5jb20iLCJVc2VyRnVsbE5hbWUiOiJ0ZXN0IHRlc3QiLCJVc2VyR3VpZCI6IjQ2YWM0YWIzLWYzYzMtNDc4Ny1iMGRiLTAxMTFhOWJhZWQzYyIsIkNsaWVudENvZGUiOiIzMTI1ODciLCJDbGllbnROYW1lIjoiTG9naW4gTG9hZCBUZXN0aW5nIiwiUm9sZSI6WyJEZWFsZXJQb3J0YWwuVXNlckFkbWluaXN0cmF0b3IiLCJEZWFsZXJQb3J0YWwuTGVuZGluZ1VzZXIiXSwiaXNzIjoiQ1VEQy5BdXRob3JpemF0aW9uLkRQIiwiYXVkIjoiQ1VEQy5TZXJ2aWNlLkRQIiwiZXhwIjoxNjMyNDE3OTgyLCJuYmYiOjE2MzIzMzE1ODJ9.P3i1vQyYd-NicqnWb0aAZoX445i7I9lmTZG6V66iAGc
+Referer: https://uat-dealer.cudl.com/
+Accept-Language: en-US,en;q=0.5
+Origin: https://qa-dealer.cudl.com
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Accept: application/json, text/plain, */*
+Host: uat-api.cudl.com
+</requestHeader>
+  <responseData class="java.lang.String">org.apache.http.NoHttpResponseException: uat-api.cudl.com:443 failed to respond&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)&#xd;
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)&#xd;
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)&#xd;
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)&#xd;
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)&#xd;
+	at java.lang.Thread.run(Unknown Source)&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String">CUDIRECT=!4zJX0EQGxyQ9ls1QnWr4DvoEzc6ZRuvY/DXSHRKMeWImqNdRUd5Hf6y1g7EHDjPXfC0ohb9Y2cxfu+M3EaB4c2lY0M6OLWPmsueQvRytCA==; f5avraaaaaaaaaaaaaaaa_session_=IFNFGMNMNGACAHNBIOLIMMJHHJMKOJLPLKMCICILGKIAFCPPBKOFIFMDNLLHHJDCBMHDNCAKEGHJMBCCGMCAMCDEPGKPOMMMEFFMINHOHPPMBOCBFHPNMLBJHMAOGEIB; ADRUM_BTa=R:28|g:45949aff-fc4b-4c70-a686-bc8fe1afaaf9|n:cudirect-test_c88b7e56-8b1c-445a-abe9-fa0206b7ff83; ADRUM_BT1=R:28|i:310884|e:4; SameSite=None</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://uat-api.cudl.com/DealerPortal/DealerPortalAPI/v1/DealerStatistics</java.net.URL>
+</httpSample>
+
+</testResults>

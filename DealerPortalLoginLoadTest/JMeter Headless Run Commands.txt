@@ -1,0 +1,3 @@
+jmeter -n -t C:\Git\Jmeter\DealerPortalLoginLoadTest\LoginTest.jmx -l C:\Git\Jmeter\DealerPortalLoginLoadTest\Results\Final\50Users3kLogins\Legacy_50_Users_50_Ramp_Up_60_Loops_Run1.jtl
+
+jmeter -n -t C:\Git\Jmeter\DealerPortalLoginLoadTest\LoginTest.jmx -l C:\Git\Jmeter\DealerPortalLoginLoadTest\Results\Final\100Users6kLogins\UAT_New_Login_100_Users_100_Ramp_Up_60_Loops_9_26_Run2.jtl

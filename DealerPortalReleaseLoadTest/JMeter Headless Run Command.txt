@@ -1,0 +1,1 @@
+jmeter -n -t C:\Git\Jmeter\DealerPortalReleaseLoadTest\DealerPortalReleaseLoadTest.jmx

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="19384" it="0" lt="0" ct="19384" ts="1631897625433" s="false" lb="https://qa-dealer.cudl.com" rc="Non HTTP response code: javax.net.ssl.SSLException" rm="Non HTTP response message: java.net.SocketException: Socket closed" tn="Thread Group 1-1" dt="text" de="" by="3535" sby="0" sc="1" ec="1" ng="1" na="1" hn="QA-FSGHQV2-L">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept-Language: en-US,en;q=0.5
+Upgrade-Insecure-Requests: 1
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Host: qa-dealer.cudl.com
+</requestHeader>
+  <responseData class="java.lang.String">javax.net.ssl.SSLException: java.net.SocketException: Socket closed&#xd;
+	at sun.security.ssl.Alert.createSSLException(Unknown Source)&#xd;
+	at sun.security.ssl.TransportContext.fatal(Unknown Source)&#xd;
+	at sun.security.ssl.TransportContext.fatal(Unknown Source)&#xd;
+	at sun.security.ssl.TransportContext.fatal(Unknown Source)&#xd;
+	at sun.security.ssl.SSLTransport.decode(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.decode(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)&#xd;
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)&#xd;
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.hc.LazyLayeredConnectionSocketFactory.connectSocket(LazyLayeredConnectionSocketFactory.java:92)&#xd;
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl$JMeterDefaultHttpClientConnectionOperator.connect(HTTPHC4Impl.java:326)&#xd;
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)&#xd;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)&#xd;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)&#xd;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)&#xd;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#xd;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:850)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:561)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:67)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1282)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1271)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.doSampling(JMeterThread.java:627)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:551)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)&#xd;
+	at java.lang.Thread.run(Unknown Source)&#xd;
+	Suppressed: java.net.SocketException: Socket closed&#xd;
+		at java.net.SocketOutputStream.socketWrite(Unknown Source)&#xd;
+		at java.net.SocketOutputStream.write(Unknown Source)&#xd;
+		at sun.security.ssl.SSLSocketOutputRecord.encodeAlert(Unknown Source)&#xd;
+		... 31 more&#xd;
+Caused by: java.net.SocketException: Socket closed&#xd;
+	at java.net.SocketInputStream.socketRead0(Native Method)&#xd;
+	at java.net.SocketInputStream.socketRead(Unknown Source)&#xd;
+	at java.net.SocketInputStream.read(Unknown Source)&#xd;
+	at java.net.SocketInputStream.read(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketInputRecord.read(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketInputRecord.readHeader(Unknown Source)&#xd;
+	at sun.security.ssl.SSLSocketInputRecord.decode(Unknown Source)&#xd;
+	... 28 more&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://qa-dealer.cudl.com/</java.net.URL>
+</httpSample>
+
+</testResults>
