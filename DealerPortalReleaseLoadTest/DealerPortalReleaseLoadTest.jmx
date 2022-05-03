@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.1">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.3">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments">Create release number run logs path prior to executing test.</stringProp>
@@ -189,7 +189,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\JMeterTestLogs\Save_Application_25_Users_Once_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
+          <stringProp name="filename">C:\JMeterTestLogs\_${environment}\Save_Application_25_Users_Once_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -301,7 +301,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\JMeterTestLogs\Save_Application_25_Users_5_Min_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
+          <stringProp name="filename">C:\JMeterTestLogs\_${environment}\Save_Application_25_Users_5_Min_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -413,7 +413,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\JMeterTestLogs\Submit_Application_25_Users_Once_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
+          <stringProp name="filename">C:\JMeterTestLogs\_${environment}\Submit_Application_25_Users_Once_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -525,7 +525,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\JMeterTestLogs\Submit_Application_25_Users_5_Min_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
+          <stringProp name="filename">C:\JMeterTestLogs\_${environment}\Submit_Application_25_Users_5_Min_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -629,7 +629,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\JMeterTestLogs\View_Application_25_Users_Once_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
+          <stringProp name="filename">C:\JMeterTestLogs\_${environment}\View_Application_25_Users_Once_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -733,7 +733,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\JMeterTestLogs\View_Application_25_Users_5_Min_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
+          <stringProp name="filename">C:\JMeterTestLogs\_${environment}\View_Application_25_Users_5_Min_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -853,7 +853,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\JMeterTestLogs\Finalize_Digital_Deal_25_Users_Once_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
+          <stringProp name="filename">C:\JMeterTestLogs\_${environment}\Finalize_Digital_Deal_25_Users_Once_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -973,7 +973,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\JMeterTestLogs\Finalize_Digital_Deal_25_Users_5_Min_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
+          <stringProp name="filename">C:\JMeterTestLogs\_${environment}\Finalize_Digital_Deal_25_Users_5_Min_Release_${ReleaseNumber}_${EpochFormatSeconds}.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
@@ -10419,7 +10419,7 @@ cm.add(c)</stringProp>
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="false">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
