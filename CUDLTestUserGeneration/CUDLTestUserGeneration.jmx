@@ -17,6 +17,7 @@
             <stringProp name="Argument.name">environment</stringProp>
             <stringProp name="Argument.value">uat</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">qa, uat</stringProp>
           </elementProp>
           <elementProp name="cuidServer" elementType="Argument">
             <stringProp name="Argument.name">cuidServer</stringProp>
@@ -38,6 +39,7 @@
             <stringProp name="Argument.name">WebsiteBaseURL</stringProp>
             <stringProp name="Argument.value">uat-dealer.cudl.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">qa-dealer.cudl.com, uat-dealer.cudl.com</stringProp>
           </elementProp>
           <elementProp name="ApiBaseURL" elementType="Argument">
             <stringProp name="Argument.name">ApiBaseURL</stringProp>
@@ -60,13 +62,13 @@
             <stringProp name="Argument.name">username</stringProp>
             <stringProp name="Argument.value">user000-312587@mailinator.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.desc">User name of user creating accounts</stringProp>
+            <stringProp name="Argument.desc">Account Creation Username. UAT: user000-312587@mailinator.com</stringProp>
           </elementProp>
           <elementProp name="password" elementType="Argument">
             <stringProp name="Argument.name">password</stringProp>
             <stringProp name="Argument.value">Password6</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.desc">Password of user creating accounts</stringProp>
+            <stringProp name="Argument.desc">Account Creation Password. UAT: Password6</stringProp>
           </elementProp>
           <elementProp name="newuserdomain" elementType="Argument">
             <stringProp name="Argument.name">newuserdomain</stringProp>
@@ -82,6 +84,7 @@
             <stringProp name="Argument.name">codeChallenge</stringProp>
             <stringProp name="Argument.value">PbpWzoToEf1SqhNlODxmQqErazQj+96dnnWz+J+XWC0=</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">UAT: PbpWzoToEf1SqhNlODxmQqErazQj+96dnnWz+J+XWC0=</stringProp>
           </elementProp>
           <elementProp name="epochUnixTimestamp" elementType="Argument">
             <stringProp name="Argument.name">epochUnixTimestamp</stringProp>
@@ -90,6 +93,13 @@
           </elementProp>
         </collectionProp>
       </Arguments>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+        <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+        <stringProp name="CookieManager.policy">default</stringProp>
+      </CookieManager>
       <hashTree/>
       <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
         <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
@@ -105,27 +115,20 @@
         <stringProp name="HTTPSampler.response_timeout"></stringProp>
       </ConfigTestElement>
       <hashTree/>
-      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
-        <collectionProp name="CookieManager.cookies"/>
-        <boolProp name="CookieManager.clearEachIteration">true</boolProp>
-        <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
-        <stringProp name="CookieManager.policy">default</stringProp>
-      </CookieManager>
-      <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Test Users" enabled="true">
-        <stringProp name="ThreadGroup.on_sample_error">stoptest</stringProp>
+        <stringProp name="ThreadGroup.on_sample_error">stopthread</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">5</stringProp>
+        <stringProp name="ThreadGroup.num_threads">80</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">800</stringProp>
         <longProp name="ThreadGroup.start_time">1518730194000</longProp>
         <longProp name="ThreadGroup.end_time">1518730194000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
-        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <boolProp name="ThreadGroup.delayedStart">true</boolProp>
       </ThreadGroup>
       <hashTree>
@@ -301,6 +304,20 @@
             <stringProp name="TestPlan.comments">Created from cURL on 2021-03-08T15:12:59.384</stringProp>
           </HeaderManager>
           <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="false">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">import org.apache.jmeter.protocol.http.control.*
+
+while(sampler.getCookieManager().getCookieCount() &gt; 0)
+{
+sampler.getCookieManager().remove(0);
+log.info (&apos;Cookie Removed&apos;)
+}</stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
         </hashTree>
         <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="Dealer Portal Database Connection" enabled="true">
           <stringProp name="TestPlan.comments">jdbc:sqlserver://[serverName[\instanceName][:portNumber]][;property=value[;property=value]]</stringProp>
@@ -375,25 +392,7 @@ ORDER BY CMM.cmm_createdDate DESC</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor - Clear Cookie Manager" enabled="true">
-            <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="filename"></stringProp>
-            <stringProp name="parameters"></stringProp>
-            <stringProp name="script">import org.apache.jmeter.protocol.http.control.*
-
-
-//Get cookie manager
-CookieManager cm = sampler.getCookieManager()
-
-log.info(&quot;******************** Cookies count: &quot; + cm.getCookieCount())
-//Clear cookie manager
-cm.clear()
-log.info(&quot;******************** Cookies count after cleanup: &quot; + cm.getCookieCount())</stringProp>
-            <stringProp name="scriptLanguage">groovy</stringProp>
-          </JSR223PreProcessor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/VerifyNewUser/{TempPasswordGUID}" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments"/>
@@ -1695,7 +1694,7 @@ log.info(&quot;******************** Cookies count after cleanup: &quot; + cm.get
           </RegexExtractor>
           <hashTree/>
         </hashTree>
-        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="false">
           <boolProp name="displayJMeterProperties">false</boolProp>
           <boolProp name="displayJMeterVariables">true</boolProp>
           <boolProp name="displaySystemProperties">false</boolProp>
@@ -1711,7 +1710,7 @@ log.info(&quot;******************** Cookies count after cleanup: &quot; + cm.get
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/Home/LoginWidget</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
@@ -1790,7 +1789,7 @@ cm.add(c)</stringProp>
       </DebugPostProcessor>
       <hashTree/>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
-        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <boolProp name="ResultCollector.error_logging">true</boolProp>
         <objProp>
           <name>saveConfig</name>
           <value class="SampleSaveConfiguration">
@@ -1823,7 +1822,7 @@ cm.add(c)</stringProp>
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
@@ -2503,7 +2502,7 @@ cm.add(c)</stringProp>
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -7918,7 +7917,7 @@ cm.add(c)</stringProp>
           </hashTree>
         </hashTree>
       </hashTree>
-      <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP(S) Test Script Recorder" enabled="true">
+      <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP(S) Test Script Recorder" enabled="false">
         <stringProp name="ProxyControlGui.port">8888</stringProp>
         <collectionProp name="ProxyControlGui.exclude_list"/>
         <collectionProp name="ProxyControlGui.include_list"/>
