@@ -9,4 +9,8 @@ Clients & Primary Admins
 
 
 UAT:
-
+312587: user000-312587@mailinator.com/Password1
+310170: user000-310170@mailinator.com/Password1
+310172: user000-310172@mailinator.com/Password1
+310173: user000-310173@mailinator.com/Password1
+312599: user000-312599@mailinator.com/Password1

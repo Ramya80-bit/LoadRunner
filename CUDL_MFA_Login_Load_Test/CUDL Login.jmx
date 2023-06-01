@@ -16,7 +16,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="mfaEnabled" elementType="Argument">
             <stringProp name="Argument.name">mfaEnabled</stringProp>
-            <stringProp name="Argument.value">true</stringProp>
+            <stringProp name="Argument.value">false</stringProp>
             <stringProp name="Argument.desc">MFA Enabled? (true/false)</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
@@ -38,13 +38,13 @@
           </elementProp>
           <elementProp name="environment" elementType="Argument">
             <stringProp name="Argument.name">environment</stringProp>
-            <stringProp name="Argument.value">qa</stringProp>
+            <stringProp name="Argument.value">uat</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">dev, qa, uat</stringProp>
           </elementProp>
           <elementProp name="cuidServer" elementType="Argument">
             <stringProp name="Argument.name">cuidServer</stringProp>
-            <stringProp name="Argument.value">test1-api.cudirect.com</stringProp>
+            <stringProp name="Argument.value">uat1-api.cudirect.com</stringProp>
             <stringProp name="Argument.desc">UAT: uat1-api.cudirect.com, QA: test1-api.cudirect.com , Dev: dev1-api.cudirect.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>

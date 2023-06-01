@@ -15,13 +15,13 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="environment" elementType="Argument">
             <stringProp name="Argument.name">environment</stringProp>
-            <stringProp name="Argument.value">qa</stringProp>
+            <stringProp name="Argument.value">uat</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">qa, uat</stringProp>
           </elementProp>
           <elementProp name="cuidServer" elementType="Argument">
             <stringProp name="Argument.name">cuidServer</stringProp>
-            <stringProp name="Argument.value">test1-api.cudirect.com</stringProp>
+            <stringProp name="Argument.value">uat1-api.cudirect.com</stringProp>
             <stringProp name="Argument.desc">UAT: uat1-api.cudirect.com, QA: test1-api.cudirect.com , Dev: dev1-api.cudirect.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
@@ -37,13 +37,13 @@
           </elementProp>
           <elementProp name="WebsiteBaseURL" elementType="Argument">
             <stringProp name="Argument.name">WebsiteBaseURL</stringProp>
-            <stringProp name="Argument.value">qa-dealer.cudl.com</stringProp>
+            <stringProp name="Argument.value">uat-dealer.cudl.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">qa-dealer.cudl.com, uat-dealer.cudl.com</stringProp>
           </elementProp>
           <elementProp name="ApiBaseURL" elementType="Argument">
             <stringProp name="Argument.name">ApiBaseURL</stringProp>
-            <stringProp name="Argument.value">qa-api.cudl.com</stringProp>
+            <stringProp name="Argument.value">uat-api.cudl.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="startDate" elementType="Argument">
@@ -60,7 +60,7 @@
           </elementProp>
           <elementProp name="username" elementType="Argument">
             <stringProp name="Argument.name">username</stringProp>
-            <stringProp name="Argument.value">user000-312496@mailinator.com</stringProp>
+            <stringProp name="Argument.value">user000-312599@mailinator.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">Account Creation Username. UAT: user000-312587@mailinator.com, QA: user001-312494@mailinator.com</stringProp>
           </elementProp>
