@@ -16,7 +16,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="mfaEnabled" elementType="Argument">
             <stringProp name="Argument.name">mfaEnabled</stringProp>
-            <stringProp name="Argument.value">false</stringProp>
+            <stringProp name="Argument.value">true</stringProp>
             <stringProp name="Argument.desc">MFA Enabled? (true/false)</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
@@ -38,13 +38,13 @@
           </elementProp>
           <elementProp name="environment" elementType="Argument">
             <stringProp name="Argument.name">environment</stringProp>
-            <stringProp name="Argument.value">uat</stringProp>
+            <stringProp name="Argument.value">qa</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">dev, qa, uat</stringProp>
           </elementProp>
           <elementProp name="cuidServer" elementType="Argument">
             <stringProp name="Argument.name">cuidServer</stringProp>
-            <stringProp name="Argument.value">uat1-api.cudirect.com</stringProp>
+            <stringProp name="Argument.value">test1-api.cudirect.com</stringProp>
             <stringProp name="Argument.desc">UAT: uat1-api.cudirect.com, QA: test1-api.cudirect.com , Dev: dev1-api.cudirect.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
@@ -61,7 +61,7 @@
           </elementProp>
           <elementProp name="mailinatorApiToken" elementType="Argument">
             <stringProp name="Argument.name">mailinatorApiToken</stringProp>
-            <stringProp name="Argument.value">835c717759eb4ba99ed31f209d22137e</stringProp>
+            <stringProp name="Argument.value">cbbd9db6f5ce4442ac9a7279b8b0d517</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
