@@ -1,13 +1,16 @@
-Primary Admins 
-usera-312398@mailinator.com/Password1
-user000-312494@mailinator.com/Password1
+QA:
 
-Clients 
-312494-
-312499
+Clients & Primary Admins
+312494: user001-312494@mailinator.com/Password1
+312495: user000-312495@mailinator.com/Password1
+312563: user000-312563@mailinator.com/Password1
+312585: user000-312585@mailinator.com/Password1
+312496: user000-312496@mailinator.com/Password1
 
 
-Dev Client:
-311964 
-
-user000-311964@mailinator.com
+UAT:
+312587: user000-312587@mailinator.com/Password1
+310170: user000-310170@mailinator.com/Password1
+310172: user000-310172@mailinator.com/Password1
+310173: user000-310173@mailinator.com/Password1
+312599: user000-312599@mailinator.com/Password1
