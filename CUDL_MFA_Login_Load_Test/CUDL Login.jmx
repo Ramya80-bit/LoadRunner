@@ -16,7 +16,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="mfaEnabled" elementType="Argument">
             <stringProp name="Argument.name">mfaEnabled</stringProp>
-            <stringProp name="Argument.value">true</stringProp>
+            <stringProp name="Argument.value">false</stringProp>
             <stringProp name="Argument.desc">MFA Enabled? (true/false)</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>

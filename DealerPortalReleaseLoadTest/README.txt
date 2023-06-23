@@ -3,3 +3,8 @@ To save cookies as variables, define the property "CookieManager.save.cookies=tr
 In JMeter bin folder update the "user.properties" file. Add the following line:
 
 CookieManager.save.cookies=true
+
+
+Additionally, add the following line to "user.properties" file to ensure timers are respected while debugging, helpful when debugging MFA enabeld work flows
+
+testplan_validation.ignore_timers=false

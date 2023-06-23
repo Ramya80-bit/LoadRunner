@@ -15,13 +15,13 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="environment" elementType="Argument">
             <stringProp name="Argument.name">environment</stringProp>
-            <stringProp name="Argument.value">uat</stringProp>
+            <stringProp name="Argument.value">qa</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">qa, uat</stringProp>
           </elementProp>
           <elementProp name="cuidServer" elementType="Argument">
             <stringProp name="Argument.name">cuidServer</stringProp>
-            <stringProp name="Argument.value">uat1-api.cudirect.com</stringProp>
+            <stringProp name="Argument.value">test1-api.cudirect.com</stringProp>
             <stringProp name="Argument.desc">UAT: uat1-api.cudirect.com, QA: test1-api.cudirect.com , Dev: dev1-api.cudirect.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
@@ -37,13 +37,13 @@
           </elementProp>
           <elementProp name="WebsiteBaseURL" elementType="Argument">
             <stringProp name="Argument.name">WebsiteBaseURL</stringProp>
-            <stringProp name="Argument.value">uat-dealer.cudl.com</stringProp>
+            <stringProp name="Argument.value">qa-dealer.cudl.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">qa-dealer.cudl.com, uat-dealer.cudl.com</stringProp>
           </elementProp>
           <elementProp name="ApiBaseURL" elementType="Argument">
             <stringProp name="Argument.name">ApiBaseURL</stringProp>
-            <stringProp name="Argument.value">uat-api.cudl.com</stringProp>
+            <stringProp name="Argument.value">qa-api.cudl.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="startDate" elementType="Argument">
@@ -60,7 +60,7 @@
           </elementProp>
           <elementProp name="username" elementType="Argument">
             <stringProp name="Argument.name">username</stringProp>
-            <stringProp name="Argument.value">user000-312599@mailinator.com</stringProp>
+            <stringProp name="Argument.value">loadtestuser01@315831.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">Account Creation Username. UAT: user000-312587@mailinator.com, QA: user001-312494@mailinator.com</stringProp>
           </elementProp>
@@ -72,7 +72,7 @@
           </elementProp>
           <elementProp name="newuserdomain" elementType="Argument">
             <stringProp name="Argument.name">newuserdomain</stringProp>
-            <stringProp name="Argument.value">origenceteam697651.testinator.com</stringProp>
+            <stringProp name="Argument.value">origence.testinator.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="newUserPassword" elementType="Argument">
@@ -121,8 +121,8 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">200</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1000</stringProp>
+        <stringProp name="ThreadGroup.num_threads">21</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">210</stringProp>
         <longProp name="ThreadGroup.start_time">1518730194000</longProp>
         <longProp name="ThreadGroup.end_time">1518730194000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
@@ -749,7 +749,7 @@ ORDER BY CMM.cmm_createdDate DESC</stringProp>
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">835c717759eb4ba99ed31f209d22137e</stringProp>
+                <stringProp name="Header.value">cbbd9db6f5ce4442ac9a7279b8b0d517</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">User-Agent</stringProp>
@@ -796,7 +796,7 @@ ORDER BY CMM.cmm_createdDate DESC</stringProp>
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">835c717759eb4ba99ed31f209d22137e</stringProp>
+                <stringProp name="Header.value">cbbd9db6f5ce4442ac9a7279b8b0d517</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">User-Agent</stringProp>
@@ -1562,7 +1562,7 @@ cm.add(c)</stringProp>
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
