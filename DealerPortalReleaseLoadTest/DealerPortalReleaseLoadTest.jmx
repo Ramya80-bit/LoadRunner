@@ -48,13 +48,13 @@
           </elementProp>
           <elementProp name="environment" elementType="Argument">
             <stringProp name="Argument.name">environment</stringProp>
-            <stringProp name="Argument.value">qa</stringProp>
+            <stringProp name="Argument.value">uat</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">dev, qa, uat</stringProp>
           </elementProp>
           <elementProp name="cuidServer" elementType="Argument">
             <stringProp name="Argument.name">cuidServer</stringProp>
-            <stringProp name="Argument.value">test1-api.cudirect.com</stringProp>
+            <stringProp name="Argument.value">uat1-api.cudirect.com</stringProp>
             <stringProp name="Argument.desc">UAT: uat1-api.cudirect.com, QA: test1-api.cudirect.com , Dev: dev1-api.cudirect.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
@@ -92,7 +92,7 @@
         <stringProp name="CookieManager.policy">default</stringProp>
       </CookieManager>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Save Application (Once)" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Save Application (Once)" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">startnextloop</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -748,7 +748,7 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Finalize Digital Deal (Once)" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Finalize Digital Deal (Once)" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">startnextloop</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
